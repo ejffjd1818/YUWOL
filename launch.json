@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "funding-page",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\iwant\\AppData\\Local\\Temp\\claude\\f76e7d6371b575eb\\e44c3265-41e7-4b9d-8be3-abc075f96e88\\scratchpad\\serve.ps1", "-Root", "C:\\Users\\iwant\\OneDrive\\Desktop\\2026\\2학기\\융창종\\펀딩페이지_2차\\유월_펀딩페이지_v4", "-Port", "8765"],
+      "port": 8765
+    }
+  ]
+}

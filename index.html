@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[시안] 유월(鍮月) 유기 워리스톤 펀딩 화면</title>
+  <!-- Pretendard CDN for standard modern Korean typography matching OhMyCompany -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <!-- FontAwesome 6 for crisp icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:wght@500;600&family=Gowun+Dodum&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+/* ===== 유월 상세 본문 전용 스타일 (style.css는 수정하지 않음) ===== */
+.yw{--ink:#17130f;--ink2:#211b16;--line:#3a3029;--cream:#f5f0e7;--warm:#ece5d9;--gold:#c8a45c;--gold2:#e2c88e;--gold-d:#9c7b3c;--taupe:#8f8172;--txt:#2a231e;
+  color:var(--txt);border-radius:14px;overflow:hidden;margin-bottom:28px;border:1px solid #eee7da}
+.yw img{display:block;width:100%;height:auto}
+.yw svg.yw-art{display:block;width:100%;height:auto}
+.yw-art-defs{position:absolute;width:0;height:0;overflow:hidden}
+.yw-art-wrap{position:relative}
+/* 4판 영상 영역: SVG 좌표(x2066.94 y1668.43 w545.74 h307.65)를 판 크기(595.28×2809.37) 기준 %로 환산 */
+.yw-video-hit{position:absolute;left:4.161%;top:53.779%;width:91.678%;height:10.951%;border:0;padding:0;margin:0;background:transparent;cursor:pointer;border-radius:5.744% / 10.19%;overflow:hidden;transition:background .2s}
+.yw-video-hit:hover{background:rgba(255,255,255,.08)}
+.yw-video-hit:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.yw-video-hit.playing{cursor:default;background:#000}
+.yw-video-hit iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yw-sec{padding:64px 44px}
+.yw-dark{background:var(--ink);color:#e9e1d3}
+.yw-dark2{background:var(--ink2);color:#e9e1d3}
+.yw-cream{background:var(--cream)}
+.yw-warm{background:var(--warm)}
+.yw-white{background:#fff}
+.yw-c{text-align:center}
+.yw-eyebrow{font-family:'Cormorant Garamond',serif;letter-spacing:.32em;font-size:13px;color:var(--gold-d);text-transform:uppercase;margin-bottom:14px}
+.yw-dark .yw-eyebrow,.yw-dark2 .yw-eyebrow{color:var(--gold)}
+.yw-h{font-family:'Noto Serif KR',serif;font-weight:500;font-size:28px;line-height:1.5;letter-spacing:-.01em;margin-bottom:20px;color:#1f1915}
+.yw-dark .yw-h,.yw-dark2 .yw-h{color:#f4ecdc}
+.yw-h3{font-family:'Noto Serif KR',serif;font-weight:600;font-size:20px;line-height:1.5;margin:44px 0 12px;color:#1f1915}
+.yw-dark .yw-h3,.yw-dark2 .yw-h3{color:#f4ecdc}
+.yw-p{font-size:15.5px;line-height:1.95;color:#4a4038;margin-bottom:14px}
+.yw-dark .yw-p,.yw-dark2 .yw-p{color:#cfc5b4}
+.yw-p b{color:#1f1915;font-weight:700}
+.yw-dark .yw-p b,.yw-dark2 .yw-p b{color:var(--gold2)}
+.yw-fig{margin:30px 0 0}
+.yw-fig img{border-radius:10px}
+.yw-cap{font-size:12.5px;color:var(--taupe);text-align:center;margin-top:9px;line-height:1.6}
+.yw-bleed{margin-left:-44px;margin-right:-44px}
+.yw-bleed img{border-radius:0}
+.yw-tbd{display:inline-block;background:#fff1e6;color:#c2410c;border:1px solid #fdba74;font-size:11px;font-weight:700;padding:0 6px;border-radius:4px;margin-left:4px;line-height:18px;vertical-align:middle;font-family:Pretendard,sans-serif;letter-spacing:0}
+.yw-fine{font-size:12.5px;color:var(--taupe);line-height:1.7;margin-top:18px}
+.yw-dark .yw-fine,.yw-dark2 .yw-fine{color:#8f8576}
+
+/* 표지 */
+.yw-cover{position:relative;background:#05070c}
+.yw-cover img{width:100%}
+.yw-cover-txt{position:absolute;left:0;right:0;top:0;padding:64px 44px 0;text-align:center}
+.yw-cover-txt .yw-eyebrow{color:var(--gold)}
+.yw-cover h2{font-family:'Noto Serif KR',serif;font-weight:400;font-size:44px;color:#f6efe1;letter-spacing:.02em;line-height:1.3}
+.yw-cover p{font-family:'Noto Serif KR',serif;font-size:17px;color:#d8cdb8;margin-top:14px}
+.yw-chips{display:flex;justify-content:center;gap:8px;margin-top:22px;flex-wrap:wrap}
+.yw-chips span{font-size:12.5px;color:var(--gold2);border:1px solid rgba(200,164,92,.55);padding:4px 12px;border-radius:99px;background:rgba(0,0,0,.25)}
+
+/* 그리드 */
+.yw-g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.yw-g2 figure{margin:0}
+.yw-g2 img{border-radius:10px;aspect-ratio:4/3;object-fit:cover}
+.yw-g2 .yw-cap{text-align:left}
+
+/* 한눈에 보기 */
+.yw-glance{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#d9cfbf;border:1px solid #d9cfbf;border-radius:12px;overflow:hidden;margin-top:24px}
+.yw-glance div{background:#fffdf9;padding:22px 20px}
+.yw-glance i{font-style:normal;font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--gold-d);line-height:1}
+.yw-glance b{display:block;font-family:'Noto Serif KR',serif;font-size:17px;margin:6px 0 4px;color:#1f1915}
+.yw-glance p{font-size:13.5px;line-height:1.7;color:#5a4f45}
+
+/* 달 */
+.yw-moons{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:30px 0 26px}
+.yw-moons div{border:1px solid var(--line);border-radius:12px;padding:22px 10px 18px;text-align:center}
+.yw-moons div.on{border-color:var(--gold);background:rgba(200,164,92,.08)}
+.yw-moons svg{width:56px;height:56px;margin:0 auto 10px;display:block}
+.yw-moons b{display:block;font-family:'Noto Serif KR',serif;font-size:16px;color:#f4ecdc}
+.yw-moons span{font-size:12.5px;color:#a99d8b}
+.yw-name{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:36px}
+.yw-name div{border:1px solid var(--line);border-radius:12px;padding:26px 22px;text-align:left}
+.yw-name strong{display:block;font-family:'Noto Serif KR',serif;font-size:46px;font-weight:400;color:var(--gold);line-height:1}
+.yw-name em{font-style:normal;font-size:13px;color:#a99d8b;letter-spacing:.1em}
+.yw-name p{font-size:14px;line-height:1.75;color:#cfc5b4;margin-top:10px}
+
+/* 명장 */
+.yw-profile{display:grid;grid-template-columns:200px 1fr;gap:22px;margin-top:30px;align-items:stretch}
+.yw-profile .story-image-frame{margin:0;min-height:240px;background:#2b241e;border:1.5px dashed var(--gold);border-radius:12px}
+.yw-profile .story-image-frame .frame-label-title{color:#f4ecdc;font-size:14px}
+.yw-profile .story-image-frame .frame-label-sub{color:#a99d8b;font-size:12px}
+.yw-dl{border-top:1px solid var(--line)}
+.yw-dl div{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.yw-dl dt{width:72px;flex:none;color:var(--gold)}
+.yw-dl dd{color:#e9e1d3}
+.yw-qa{margin-top:30px;border-top:1px solid var(--line)}
+.yw-qa div{padding:18px 0;border-bottom:1px solid var(--line)}
+.yw-qa b{display:block;font-family:'Noto Serif KR',serif;font-weight:500;font-size:15.5px;color:#f4ecdc;margin-bottom:6px}
+.yw-qa span{font-size:14px;color:#8f8576;font-style:italic}
+
+/* 카드 */
+.yw-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+.yw-cards div{background:#fff;border:1px solid #e3d9c8;border-radius:12px;padding:22px 20px}
+.yw-cards b{display:block;font-family:'Noto Serif KR',serif;font-size:16.5px;margin-bottom:6px;color:#1f1915}
+.yw-cards p{font-size:14px;line-height:1.75;color:#5a4f45}
+.yw-dark .yw-cards div,.yw-dark2 .yw-cards div{background:transparent;border-color:var(--line)}
+.yw-dark .yw-cards b,.yw-dark2 .yw-cards b{color:#f4ecdc}
+.yw-dark .yw-cards p,.yw-dark2 .yw-cards p{color:#cfc5b4}
+
+/* 공정 */
+.yw-steps{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.yw-steps figure{margin:0;background:var(--cream);border-radius:12px;overflow:hidden}
+.yw-steps img{aspect-ratio:3/2;object-fit:cover}
+.yw-steps figcaption{padding:16px 18px 20px;font-size:14px;line-height:1.75;color:#5a4f45}
+.yw-steps figcaption i{font-style:normal;font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--gold-d);margin-right:6px}
+.yw-steps figcaption b{font-family:'Noto Serif KR',serif;font-size:16px;color:#1f1915}
+.yw-steps figcaption span{display:block;margin-top:6px}
+.yw-box{border:1px solid #e3d9c8;background:#fffdf9;border-radius:12px;padding:24px 22px;margin-top:28px}
+.yw-box h4{font-family:'Noto Serif KR',serif;font-size:17px;font-weight:600;margin-bottom:8px;color:#1f1915}
+.yw-box p{font-size:14.5px;line-height:1.85;color:#4a4038}
+.yw-ratio{display:flex;height:46px;margin:14px 0;border-radius:8px;overflow:hidden;font-size:14px;font-weight:700}
+.yw-ratio .cu{flex:1;background:linear-gradient(90deg,#b07a4a,#c8935c);color:#fff;display:flex;align-items:center;padding-left:16px}
+.yw-ratio .sn{flex:1;background:#cfc8bb;color:#2a231e;display:flex;align-items:center;justify-content:center}
+.yw-quote{font-family:'Noto Serif KR',serif;font-size:20px;line-height:1.75;text-align:center;padding:34px 10px 6px;color:#1f1915}
+
+/* 표 */
+.yw-table{width:100%;border-collapse:collapse;margin-top:22px;font-size:14.5px}
+.yw-table th,.yw-table td{padding:13px 12px;border-bottom:1px solid #e3d9c8;text-align:left;vertical-align:top;line-height:1.65}
+.yw-table th{width:28%;font-family:'Noto Serif KR',serif;font-weight:600;color:#1f1915;background:rgba(200,164,92,.06)}
+.yw-table td{color:#4a4038}
+.yw-table thead th{background:none;font-family:Pretendard,sans-serif;font-size:12.5px;color:var(--taupe);font-weight:600;width:auto}
+.yw-table td.on,.yw-table th.on{background:var(--ink);color:var(--gold2);border-color:var(--line)}
+.yw-table thead th.on{color:var(--gold);font-family:'Noto Serif KR',serif;font-size:15px}
+.yw-safety-slot{margin-top:22px!important;min-height:260px!important;border:1.5px dashed var(--gold-d)!important;background:#fffdf9!important}
+
+/* 사용법 */
+.yw-how{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.yw-how div{border-top:2px solid var(--gold);padding-top:14px}
+.yw-how i{font-style:normal;font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--gold-d);line-height:1}
+.yw-how b{display:block;font-family:'Noto Serif KR',serif;font-size:17px;margin:6px 0 4px}
+.yw-how p{font-size:13.5px;line-height:1.75;color:#5a4f45}
+
+/* 크기 도식 */
+.yw-size{display:grid;grid-template-columns:1.2fr 1fr;gap:20px;align-items:center;margin-top:24px;background:#fffdf9;border:1px solid #e3d9c8;border-radius:12px;padding:22px}
+.yw-size svg{width:100%;height:auto}
+.yw-size ul{list-style:none;font-size:14.5px;line-height:2.1;color:#4a4038}
+.yw-size ul b{display:inline-block;width:52px;color:#1f1915}
+
+/* 하루 장면 */
+.yw-day{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.yw-day figure{margin:0;background:#fff;border-radius:12px;overflow:hidden;border:1px solid #e3d9c8}
+.yw-day img{aspect-ratio:4/3;object-fit:cover}
+.yw-day figcaption{padding:14px 16px 18px;font-size:13.5px;line-height:1.7;color:#5a4f45}
+.yw-day figcaption b{display:block;font-family:'Noto Serif KR',serif;font-size:15.5px;color:#1f1915;margin-bottom:2px}
+
+/* 리스트 */
+.yw-check{list-style:none;margin-top:18px}
+.yw-check li{position:relative;padding:13px 0 13px 30px;border-bottom:1px solid #e3d9c8;font-size:15px;color:#3a3029}
+.yw-check li::before{content:"";position:absolute;left:4px;top:19px;width:11px;height:6px;border-left:2px solid var(--gold-d);border-bottom:2px solid var(--gold-d);transform:rotate(-45deg)}
+.yw-pkg{list-style:none;counter-reset:p;margin-top:20px;border-top:1px solid #e3d9c8}
+.yw-pkg li{counter-increment:p;display:flex;gap:14px;padding:13px 0;border-bottom:1px solid #e3d9c8;font-size:14.5px;color:#4a4038}
+.yw-pkg li::before{content:"0" counter(p);font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--gold-d);width:26px;flex:none}
+.yw-pkg b{color:#1f1915;margin-right:6px}
+
+/* 한정 수량 */
+.yw-dots{display:grid;grid-template-columns:repeat(20,1fr);gap:6px;margin-top:22px}
+.yw-dots span{aspect-ratio:1/1;border-radius:50%;background:var(--gold);opacity:.9}
+.yw-dots span.s{background:#f4ecdc}
+.yw-count{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;font-size:13.5px;color:#a99d8b}
+.yw-count b{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--gold);font-weight:500}
+.yw-legend{display:flex;gap:16px;font-size:12.5px;color:#a99d8b;margin-top:10px}
+.yw-legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+
+/* 리워드 */
+.yw-rw{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.yw-rw div{border:1px solid #e3d9c8;border-radius:12px;padding:22px 18px;background:#fff;position:relative}
+.yw-rw div.best{border:2px solid var(--gold);background:#fffaf0}
+.yw-rw em{font-style:normal;font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--gold-d)}
+.yw-rw b{display:block;font-family:'Noto Serif KR',serif;font-size:18px;margin:6px 0 10px}
+.yw-rw p{font-size:13.5px;line-height:1.7;color:#5a4f45}
+.yw-rw strong{display:block;font-size:20px;margin-top:12px;color:#1f1915}
+.yw-rw small{display:block;font-size:12px;color:var(--taupe);margin-top:2px}
+.yw-rw .flag{position:absolute;top:-11px;right:14px;background:var(--gold);color:#1f1915;font-size:11px;font-weight:700;padding:2px 10px;border-radius:99px}
+
+/* 후원금 */
+.yw-fund div{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid #e3d9c8;font-size:14.5px;color:#3a3029}
+.yw-fund div:first-child{border-top:1px solid #e3d9c8}
+.yw-tl{list-style:none;border-left:2px solid var(--gold);margin:18px 0 0 6px;padding-left:22px}
+.yw-tl li{position:relative;padding-bottom:18px;font-size:14.5px;color:#4a4038;line-height:1.7}
+.yw-tl li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--gold)}
+.yw-tl b{display:block;font-family:'Noto Serif KR',serif;color:#1f1915;font-size:15.5px}
+.yw-team-slot{margin-top:20px!important;min-height:300px!important;border:1.5px dashed var(--gold-d)!important;background:#fffdf9!important}
+
+/* FAQ */
+.yw-faq{margin-top:20px;border-top:1px solid #e3d9c8}
+.yw-faq details{border-bottom:1px solid #e3d9c8}
+.yw-faq summary{cursor:pointer;list-style:none;padding:17px 36px 17px 4px;font-size:15.5px;font-weight:600;color:#1f1915;position:relative}
+.yw-faq summary::-webkit-details-marker{display:none}
+.yw-faq summary::before{content:"Q.";font-family:'Cormorant Garamond',serif;color:var(--gold-d);font-size:19px;margin-right:8px}
+.yw-faq summary::after{content:"+";position:absolute;right:8px;top:12px;font-size:22px;color:var(--gold-d)}
+.yw-faq details[open] summary::after{content:"–"}
+.yw-faq details p{padding:0 10px 18px 30px;font-size:14.5px;line-height:1.85;color:#4a4038}
+
+/* 마무리 */
+.yw-closing{padding:84px 44px;text-align:center}
+.yw-closing .yw-h{font-size:27px;line-height:1.7;font-weight:400}
+.yw-cta{display:inline-block;margin-top:26px;background:var(--gold);color:#1f1915;font-weight:800;font-size:16px;padding:14px 30px;border-radius:99px}
+
+@media (max-width:760px){
+  .yw-sec{padding:52px 22px}
+  .yw-bleed{margin-left:-22px;margin-right:-22px}
+  .yw-cover-txt{padding:44px 22px 0}
+  .yw-cover h2{font-size:34px}
+  .yw-g2,.yw-glance,.yw-name,.yw-cards,.yw-steps,.yw-how,.yw-size,.yw-day,.yw-rw,.yw-profile{grid-template-columns:1fr}
+  .yw-h{font-size:23px}
+}
+
+/* 명장 섹션 보강 */
+.yw-bigq{margin:6px 0 26px;padding:26px 24px;border-left:3px solid var(--gold);background:rgba(200,164,92,.07);font-family:'Noto Serif KR',serif;font-size:21px;line-height:1.7;color:#f4ecdc}
+.yw-bigq cite{display:block;margin-top:12px;font-style:normal;font-family:Pretendard,sans-serif;font-size:13px;color:var(--gold)}
+.yw-nums{display:grid;grid-template-columns:repeat(4,1fr);margin-top:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.yw-nums div{padding:20px 6px;text-align:center;border-right:1px solid var(--line)}
+.yw-nums div:last-child{border-right:0}
+.yw-nums b{display:block;font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:500;color:var(--gold);line-height:1.1}
+.yw-nums small{font-family:Pretendard,sans-serif;font-size:14px;margin-left:2px}
+.yw-nums span{font-size:12.5px;color:#a99d8b}
+.yw-path{list-style:none;margin-top:16px;border-left:1px solid var(--gold);padding-left:22px}
+.yw-path li{position:relative;padding:0 0 16px;font-size:14.5px;color:#cfc5b4}
+.yw-path li::before{content:"";position:absolute;left:-27px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--ink2);border:2px solid var(--gold)}
+.yw-path li.now::before{background:var(--gold)}
+.yw-path b{display:inline-block;width:58px;font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--gold)}
+.yw-video{margin-top:28px;aspect-ratio:16/9;border:1.5px dashed var(--gold);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;background:#191510}
+.yw-video span{width:56px;height:56px;border-radius:50%;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:18px;margin-bottom:12px}
+.yw-video b{font-family:'Noto Serif KR',serif;font-size:16px;color:#f4ecdc}
+.yw-video em{font-style:normal;font-size:12.5px;color:#a99d8b;margin-top:6px;max-width:440px;line-height:1.6}
+@media (max-width:760px){.yw-nums{grid-template-columns:1fr 1fr}.yw-nums div:nth-child(2){border-right:0}}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. Top Announcement Bar (상단 공지 배너)
+       ========================================================================= -->
+  <aside class="top-banner" id="topBanner">
+    <div class="top-banner-inner">
+      <span class="banner-text">디자인 시안 · 본유기 팀 내부 검토용 미리보기 (실제 펀딩 페이지 아님)</span>
+      <button type="button" class="banner-close-btn" id="btnBannerClose" aria-label="배너 닫기">✕</button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. Global Header (상단 헤더 네비게이션)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="javascript:void(0)" class="site-logo" title="플랫폼 로고 자리" style="font-weight:900;font-size:19px;color:#4a5568">펀딩 플랫폼 <span style="font-size:11px;font-weight:600;color:#26a475;border:1px solid #26a475;border-radius:99px;padding:1px 8px;margin-left:6px">화면 시안</span></a>
+
+        <!-- Main Menus -->
+        <nav class="main-nav">
+          <a href="javascript:void(0)" class="nav-item active">후원하기</a>
+          <a href="javascript:void(0)" class="nav-item">투자하기</a>
+          <a href="javascript:void(0)" class="nav-item">오픈예정</a>
+          <a href="javascript:void(0)" class="nav-item">가이드</a>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <button type="button" class="header-search-btn" aria-label="검색">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="javascript:void(0)" class="header-login-btn">로그인</a>
+        <a href="javascript:void(0)" class="btn-open-funding">펀딩 신청하기</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Main Page Container
+       ========================================================================= -->
+  <main class="page-container">
+
+    <!-- 3. Category & Tag Navigation -->
+    <section class="category-tag-section">
+      <!-- [텍스트 수정]: 카테고리명을 변경하세요 -->
+      <div class="category-crumb">
+        <a href="javascript:void(0)" class="crumb-link">
+          <span class="chevron-icon">‹</span>
+          <span class="crumb-title">리빙</span>
+        </a>
+      </div>
+
+      <!-- [텍스트 수정]: 프로젝트 관련 해시태그를 변경하세요 -->
+      <div class="tag-chips-wrap">
+        <span class="tag-chip">유기</span>
+        <span class="tag-chip">워리스톤</span>
+        <span class="tag-chip">키링</span>
+        <span class="tag-chip">안성맞춤</span>
+        <span class="tag-chip">명장</span>
+        <span class="tag-chip">100개한정</span>
+      </div>
+    </section>
+
+    <!-- 4. Project Hero Section (2 Columns: Left Visual Slot + Right Funding Overview) -->
+    <section class="project-hero-section">
+
+      <!-- ================= LEFT: MAIN IMAGE FRAME ================= -->
+      <!-- [사진 추가 방법]:
+           1) 웹 브라우저에서 아래 박스를 직접 클릭하면 컴퓨터에 있는 사진을 바로 골라 테스트해볼 수 있습니다.
+           2) 코드로 넣으려면: <img src="이미지파일경로.jpg" class="uploaded-img" alt="대표이미지"> 태그를 media-frame-box 안에 넣으세요. -->
+      <div class="hero-media-col">
+        <div class="media-frame-box drop-image-slot" id="mainHeroImageSlot" title="클릭하여 대표 사진을 등록/교체할 수 있습니다">
+          <input type="file" accept="image/*" class="slot-file-input" style="display: none;">
+
+          <img src="images/hero.jpg" class="uploaded-preview-img" alt="유월 대표 이미지">
+
+          <!-- Carousel Indicator Dots -->
+          <div class="slider-dots-bar">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= RIGHT: FUNDING STATS OVERVIEW ================= -->
+      <div class="hero-info-col">
+
+        <!-- [텍스트 수정]: 프로젝트 제목 및 한 줄 소개 입력 영역 -->
+        <div class="project-title-area">
+          <h1 class="project-main-title">
+            손끝에 머무는 50년, 명장이 빚은 유기 워리스톤 유월(鍮月)
+          </h1>
+        </div>
+
+        <!-- Funding Stats Box -->
+        <div class="funding-stats-box">
+          <div class="stats-label">모인 금액</div>
+          <div class="stats-numbers-row">
+            <div class="amount-wrap">
+              <!-- 모인 금액 숫자 교체 -->
+              <span class="amount-number">0</span><span class="amount-unit">원</span>
+            </div>
+            <div class="percentage-rate">
+              <!-- 달성률 퍼센트 교체 -->
+              <span class="rate-number">0</span>%
+            </div>
+          </div>
+
+          <!-- Progress Bar Line -->
+          <div class="funding-progress-track">
+            <div class="funding-progress-fill" style="width: 0%;"></div>
+          </div>
+
+          <!-- Backer Count -->
+          <div class="backers-count-row">
+            <span class="highlight-backers">0명</span>이 후원했어요<span class="yw-tbd">오픈 전</span>
+          </div>
+        </div>
+
+        <!-- Details List (목표 금액, 펀딩 기간, 결제 시점, 펀딩 방식) -->
+        <dl class="funding-meta-list">
+          <div class="meta-row">
+            <dt class="meta-dt">
+              <span class="omc-check-icon">⌵</span> 목표 금액
+            </dt>
+            <!-- [텍스트 수정]: 목표 금액 -->
+            <dd class="meta-dd">0,000,000원<span class="yw-tbd">미정</span></dd>
+          </div>
+
+          <div class="meta-row">
+            <dt class="meta-dt">
+              <span class="omc-check-icon">⌵</span> 펀딩 기간
+            </dt>
+            <!-- [텍스트 수정]: 펀딩 기간 및 남은 일수 -->
+            <dd class="meta-dd">
+              <span>0000-00-00 ~ 0000-00-00</span>
+              <span class="badge-dday">00일</span><span class="yw-tbd">미정</span>
+            </dd>
+          </div>
+
+          <div class="meta-row">
+            <dt class="meta-dt">
+              <span class="omc-check-icon">⌵</span> 결제 시점
+            </dt>
+            <dd class="meta-dd">후원 시 즉시 결제</dd>
+          </div>
+
+          <div class="meta-row">
+            <dt class="meta-dt">
+              <span class="omc-check-icon">⌵</span> 펀딩 방식
+            </dt>
+            <dd class="meta-dd">
+              <span>무조건 리워드</span>
+              <span class="info-tooltip-icon" title="목표 금액 달성 여부와 상관없이 펀딩 마감일까지 모인 금액과 리워드가 제공되는 방식입니다.">ⓘ</span>
+            </dd>
+          </div>
+        </dl>
+
+        <!-- Action Buttons Row -->
+        <div class="hero-actions-row">
+          <!-- Heart Button (Hover only) -->
+          <button type="button" class="btn-action-icon btn-proto-hover" aria-label="좋아요">
+            <i class="fa-regular fa-heart"></i>
+            <span class="action-count">0</span>
+          </button>
+
+          <!-- Main CTA: 후원하기 Button (Hover only) -->
+          <button type="button" class="btn-primary-funding btn-proto-hover">
+            후원하기
+          </button>
+
+          <!-- Share Button (Hover only) -->
+          <button type="button" class="btn-action-icon btn-proto-hover" aria-label="공유하기">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            <span class="action-count">0</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. Sticky Navigation Tabs (프로젝트 소개 / 커뮤니티 / 후원자)
+         * 중요 요구사항: 확실하게 클릭 가능하며 탭 전환 완벽 작동
+         ========================================================================= -->
+    <nav class="sticky-tabs-nav" id="mainTabsNav">
+      <div class="tabs-inner">
+        <button type="button" class="tab-btn active" data-tab="tab-story" id="tabBtnStory">
+          프로젝트 소개
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-community" id="tabBtnCommunity">
+          커뮤니티
+        </button>
+        <button type="button" class="tab-btn" data-tab="tab-supporter" id="tabBtnSupporter">
+          후원자 <span class="tab-count-badge">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- =========================================================================
+         6. Content Columns Grid (Left Tab Panels + Right Sticky Sidebar)
+         ========================================================================= -->
+    <div class="content-columns-grid">
+
+      <!-- ================= LEFT COLUMN: TAB PANELS ================= -->
+      <div class="left-tab-panels">
+
+        <!-- =====================================================================
+             PANEL 1: 프로젝트 소개 (Project Story & Wireframe Slots)
+             ===================================================================== -->
+        <section class="tab-panel active" id="tab-story">
+
+          <!-- AI 요약 Card -->
+          <article class="ai-summary-card">
+            <div class="ai-summary-header">
+              <span class="ai-sparkle-icon">✦</span>
+              <span class="ai-title">AI 요약</span>
+            </div>
+            <!-- [텍스트 수정]: AI 요약 3가지 항목 수정 -->
+            <ul class="ai-bullet-list">
+              <li class="ai-bullet-item">
+                <span class="ai-dot">•</span>
+                <span class="ai-text">안성맞춤명장 1호 이종오 명장의 공방에서 한 점씩 만드는 초승달 모양 유기 워리스톤 키링입니다.</span>
+              </li>
+              <li class="ai-bullet-item">
+                <span class="ai-dot">•</span>
+                <span class="ai-text">도금이 아닌 구리·주석 합금 유기의 묵직한 감촉과, 엄지가 자연스럽게 감기는 곡선을 손으로 다듬어 완성했습니다.</span>
+              </li>
+              <li class="ai-bullet-item">
+                <span class="ai-dot">•</span>
+                <span class="ai-text">소재 시험성적서 내용을 본문에 공개하며, 고유 번호를 새긴 100개만 제작합니다.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- 유월 프로젝트 스토리 -->
+<div class="yw">
+
+  <!-- 0~7. 일러스트 스토리 (제작/Funding page.svg에서 변환) -->
+<svg class="yw-art-defs" aria-hidden="true" focusable="false">
+<style>
+.ywa-1, .ywa-2, .ywa-3, .ywa-4, .ywa-5, .ywa-6, .ywa-7, .ywa-8, .ywa-9, .ywa-10, .ywa-11, .ywa-12, .ywa-13, .ywa-14, .ywa-15, .ywa-16, .ywa-17, .ywa-18, .ywa-19, .ywa-20, .ywa-21, .ywa-22, .ywa-23, .ywa-24, .ywa-25, .ywa-26, .ywa-27, .ywa-28, .ywa-29, .ywa-30, .ywa-31, .ywa-32, .ywa-33, .ywa-34, .ywa-35, .ywa-36, .ywa-37, .ywa-38, .ywa-39, .ywa-40, .ywa-41, .ywa-42, .ywa-43, .ywa-44, .ywa-45, .ywa-46, .ywa-47, .ywa-48, .ywa-49, .ywa-50, .ywa-51, .ywa-52, .ywa-53, .ywa-54, .ywa-55, .ywa-56, .ywa-57, .ywa-58, .ywa-59, .ywa-60, .ywa-61, .ywa-62, .ywa-63, .ywa-64 {
+        font-family: GowunDodum-Regular, 'Gowun Dodum', sans-serif;
+      }
+
+      .ywa-1, .ywa-65, .ywa-4, .ywa-5, .ywa-8, .ywa-9, .ywa-66, .ywa-67, .ywa-68, .ywa-24, .ywa-25, .ywa-32, .ywa-36, .ywa-38, .ywa-43, .ywa-69 {
+        fill: #9c8a74;
+      }
+
+      .ywa-1, .ywa-70, .ywa-71, .ywa-17, .ywa-72, .ywa-21, .ywa-27, .ywa-73, .ywa-50, .ywa-57, .ywa-58 {
+        letter-spacing: -.02em;
+      }
+
+      .ywa-1, .ywa-8, .ywa-10, .ywa-16, .ywa-17, .ywa-20, .ywa-21, .ywa-24, .ywa-27, .ywa-28, .ywa-31, .ywa-37, .ywa-46, .ywa-48, .ywa-50, .ywa-51, .ywa-54, .ywa-56, .ywa-59, .ywa-74 {
+        font-size: 18px;
+      }
+
+      .ywa-2, .ywa-9, .ywa-12, .ywa-22, .ywa-25, .ywa-35, .ywa-38, .ywa-43, .ywa-44 {
+        font-size: 14px;
+      }
+
+      .ywa-2, .ywa-11, .ywa-17, .ywa-18, .ywa-20, .ywa-23, .ywa-75, .ywa-28, .ywa-30, .ywa-76, .ywa-77, .ywa-40, .ywa-45, .ywa-52, .ywa-60 {
+        fill: #6b5b4b;
+      }
+
+      .ywa-2, .ywa-12, .ywa-22, .ywa-25, .ywa-35, .ywa-38, .ywa-43, .ywa-44 {
+        letter-spacing: -.01em;
+      }
+
+      .ywa-78, .ywa-70, .ywa-6, .ywa-79, .ywa-80, .ywa-11, .ywa-13, .ywa-14, .ywa-72, .ywa-81, .ywa-82, .ywa-18, .ywa-19, .ywa-68, .ywa-23, .ywa-83, .ywa-84, .ywa-85, .ywa-86, .ywa-87, .ywa-39, .ywa-41, .ywa-88, .ywa-45, .ywa-49, .ywa-89, .ywa-90, .ywa-91, .ywa-52, .ywa-92, .ywa-93, .ywa-58, .ywa-60, .ywa-61, .ywa-94, .ywa-62, .ywa-64 {
+        stroke-miterlimit: 10;
+      }
+
+      .ywa-78, .ywa-79, .ywa-84, .ywa-95, .ywa-86, .ywa-87, .ywa-88, .ywa-89, .ywa-93, .ywa-94 {
+        fill: none;
+      }
+
+      .ywa-78, .ywa-81, .ywa-86, .ywa-87, .ywa-88 {
+        stroke: #e2bc60;
+      }
+
+      .ywa-78, .ywa-86 {
+        opacity: .68;
+      }
+
+      .ywa-3, .ywa-71, .ywa-96, .ywa-31, .ywa-97, .ywa-35, .ywa-37, .ywa-48, .ywa-98 {
+        fill: #3f3a35;
+      }
+
+      .ywa-3, .ywa-66, .ywa-99, .ywa-100, .ywa-30, .ywa-77, .ywa-45, .ywa-52, .ywa-55, .ywa-61 {
+        letter-spacing: -.02em;
+      }
+
+      .ywa-3, .ywa-30, .ywa-42, .ywa-45, .ywa-49, .ywa-52, .ywa-61, .ywa-62 {
+        font-size: 24px;
+      }
+
+      .ywa-65, .ywa-5, .ywa-11, .ywa-15, .ywa-101, .ywa-37, .ywa-42, .ywa-102, .ywa-103, .ywa-59, .ywa-62, .ywa-63 {
+        letter-spacing: -.01em;
+      }
+
+      .ywa-104, .ywa-6, .ywa-10, .ywa-14, .ywa-24, .ywa-26, .ywa-85, .ywa-28, .ywa-29, .ywa-31, .ywa-39, .ywa-46, .ywa-47, .ywa-90, .ywa-51, .ywa-105, .ywa-64 {
+        letter-spacing: -.02em;
+      }
+
+      .ywa-104, .ywa-10, .ywa-106, .ywa-12, .ywa-13, .ywa-19, .ywa-101, .ywa-21, .ywa-107, .ywa-100, .ywa-46, .ywa-47, .ywa-50, .ywa-51, .ywa-108, .ywa-56, .ywa-57, .ywa-59 {
+        fill: #e7dfd3;
+      }
+
+      .ywa-109 {
+        filter: url(#ywa-drop-shadow-36);
+      }
+
+      .ywa-110 {
+        clip-path: url(#ywa-clippath-21);
+      }
+
+      .ywa-111 {
+        filter: url(#ywa-drop-shadow-39);
+      }
+
+      .ywa-112 {
+        filter: url(#ywa-drop-shadow-22);
+      }
+
+      .ywa-113 {
+        clip-path: url(#ywa-clippath-6);
+      }
+
+      .ywa-114 {
+        clip-path: url(#ywa-clippath-7);
+      }
+
+      .ywa-115 {
+        opacity: .24;
+      }
+
+      .ywa-116 {
+        clip-path: url(#ywa-clippath-17);
+      }
+
+      .ywa-4 {
+        font-size: 11px;
+        letter-spacing: -.02em;
+      }
+
+      .ywa-117 {
+        filter: url(#ywa-drop-shadow-18);
+      }
+
+      .ywa-118 {
+        filter: url(#ywa-drop-shadow-34);
+      }
+
+      .ywa-5, .ywa-106, .ywa-15, .ywa-66, .ywa-67, .ywa-100, .ywa-96, .ywa-32, .ywa-33, .ywa-34, .ywa-77, .ywa-98, .ywa-63 {
+        font-size: 12px;
+      }
+
+      .ywa-70, .ywa-13, .ywa-82, .ywa-19, .ywa-68, .ywa-39, .ywa-41, .ywa-88, .ywa-45, .ywa-49, .ywa-52 {
+        stroke-width: .25px;
+      }
+
+      .ywa-70, .ywa-91, .ywa-52 {
+        stroke: #6b5b4b;
+      }
+
+      .ywa-119 {
+        filter: url(#ywa-drop-shadow-16);
+      }
+
+      .ywa-120 {
+        clip-path: url(#ywa-clippath-15);
+      }
+
+      .ywa-6, .ywa-11, .ywa-14, .ywa-72, .ywa-18, .ywa-23, .ywa-85, .ywa-90, .ywa-58, .ywa-60, .ywa-61, .ywa-62, .ywa-64 {
+        stroke-width: .5px;
+      }
+
+      .ywa-6, .ywa-13, .ywa-26, .ywa-29, .ywa-39, .ywa-64 {
+        font-size: 36px;
+      }
+
+      .ywa-6, .ywa-26, .ywa-121, .ywa-39, .ywa-41, .ywa-49 {
+        fill: #211d19;
+      }
+
+      .ywa-6, .ywa-39, .ywa-41, .ywa-49 {
+        stroke: #211d19;
+      }
+
+      .ywa-122 {
+        clip-path: url(#ywa-clippath-18);
+      }
+
+      .ywa-123 {
+        clip-path: url(#ywa-clippath-4);
+      }
+
+      .ywa-124 {
+        filter: url(#ywa-drop-shadow-9);
+      }
+
+      .ywa-125 {
+        filter: url(#ywa-drop-shadow-2);
+      }
+
+      .ywa-126 {
+        filter: url(#ywa-drop-shadow-14);
+      }
+
+      .ywa-127 {
+        clip-path: url(#ywa-clippath-22);
+      }
+
+      .ywa-9 {
+        letter-spacing: -.02em;
+      }
+
+      .ywa-79, .ywa-80, .ywa-14, .ywa-82, .ywa-83, .ywa-85, .ywa-90, .ywa-93, .ywa-58 {
+        stroke: #c8a45c;
+      }
+
+      .ywa-79, .ywa-128, .ywa-25, .ywa-129, .ywa-46 {
+        opacity: .55;
+      }
+
+      .ywa-130 {
+        clip-path: url(#ywa-clippath-23);
+      }
+
+      .ywa-80 {
+        opacity: .78;
+      }
+
+      .ywa-80, .ywa-83 {
+        fill: #423724;
+      }
+
+      .ywa-11, .ywa-18, .ywa-68, .ywa-23, .ywa-84, .ywa-45, .ywa-89, .ywa-92, .ywa-60 {
+        stroke: #9c8a74;
+      }
+
+      .ywa-11, .ywa-60 {
+        font-size: 21px;
+      }
+
+      .ywa-106 {
+        opacity: .41;
+      }
+
+      .ywa-106, .ywa-66, .ywa-67, .ywa-100, .ywa-77, .ywa-98, .ywa-103 {
+        font-family: Aboreto-Regular, Aboreto;
+      }
+
+      .ywa-131 {
+        filter: url(#ywa-drop-shadow-6);
+      }
+
+      .ywa-13, .ywa-72, .ywa-19, .ywa-61, .ywa-62, .ywa-64 {
+        stroke: #faf5ed;
+      }
+
+      .ywa-14, .ywa-15, .ywa-82, .ywa-22, .ywa-85, .ywa-29, .ywa-34, .ywa-129, .ywa-132, .ywa-90, .ywa-133, .ywa-53, .ywa-58 {
+        fill: #e2bc60;
+      }
+
+      .ywa-134 {
+        filter: url(#ywa-drop-shadow-28);
+      }
+
+      .ywa-16, .ywa-21, .ywa-51, .ywa-74 {
+        opacity: .81;
+      }
+
+      .ywa-81, .ywa-135, .ywa-92 {
+        fill: #151b20;
+      }
+
+      .ywa-82 {
+        font-size: 69.52px;
+      }
+
+      .ywa-82, .ywa-85, .ywa-136, .ywa-137 {
+        font-weight: 500;
+      }
+
+      .ywa-82, .ywa-85, .ywa-137 {
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std', 'Noto Serif KR', serif;
+      }
+
+      .ywa-138 {
+        clip-path: url(#ywa-clippath-9);
+      }
+
+      .ywa-139 {
+        clip-path: url(#ywa-clippath-10);
+      }
+
+      .ywa-140, .ywa-141, .ywa-142, .ywa-136 {
+        fill: #f3efe6;
+      }
+
+      .ywa-143 {
+        filter: url(#ywa-drop-shadow-41);
+      }
+
+      .ywa-18 {
+        letter-spacing: -.01em;
+      }
+
+      .ywa-18, .ywa-23 {
+        font-size: 23px;
+      }
+
+      .ywa-144 {
+        filter: url(#ywa-drop-shadow-5);
+      }
+
+      .ywa-19 {
+        filter: url(#ywa-drop-shadow-42);
+        font-size: 54.9px;
+        letter-spacing: -.02em;
+      }
+
+      .ywa-145 {
+        filter: url(#ywa-drop-shadow-21);
+      }
+
+      .ywa-146 {
+        filter: url(#ywa-drop-shadow-17);
+      }
+
+      .ywa-147 {
+        mix-blend-mode: multiply;
+        opacity: .56;
+      }
+
+      .ywa-148 {
+        clip-path: url(#ywa-clippath-25);
+      }
+
+      .ywa-149 {
+        clip-path: url(#ywa-clippath-27);
+      }
+
+      .ywa-150 {
+        filter: url(#ywa-drop-shadow-37);
+      }
+
+      .ywa-22, .ywa-151, .ywa-43 {
+        opacity: .47;
+      }
+
+      .ywa-152 {
+        fill: #25323b;
+      }
+
+      .ywa-68 {
+        filter: url(#ywa-drop-shadow-43);
+        font-size: 19.38px;
+        letter-spacing: -.01em;
+      }
+
+      .ywa-23 {
+        letter-spacing: -.02em;
+      }
+
+      .ywa-83 {
+        opacity: .19;
+      }
+
+      .ywa-153 {
+        clip-path: url(#ywa-clippath-11);
+      }
+
+      .ywa-107, .ywa-91 {
+        opacity: .65;
+      }
+
+      .ywa-154 {
+        letter-spacing: -.07em;
+      }
+
+      .ywa-155 {
+        filter: url(#ywa-drop-shadow-8);
+      }
+
+      .ywa-156 {
+        filter: url(#ywa-drop-shadow-4);
+      }
+
+      .ywa-157 {
+        filter: url(#ywa-drop-shadow-19);
+      }
+
+      .ywa-158 {
+        opacity: .5;
+      }
+
+      .ywa-158, .ywa-159 {
+        fill: #8c887e;
+      }
+
+      .ywa-160 {
+        filter: url(#ywa-drop-shadow-7);
+      }
+
+      .ywa-75 {
+        opacity: .85;
+      }
+
+      .ywa-161 {
+        clip-path: url(#ywa-clippath-28);
+      }
+
+      .ywa-141 {
+        font-family: Pretendard-Regular-KSCpc-EUC-H, Pretendard;
+      }
+
+      .ywa-141, .ywa-136 {
+        font-size: 13.66px;
+      }
+
+      .ywa-27, .ywa-33, .ywa-42, .ywa-44, .ywa-91, .ywa-162, .ywa-61, .ywa-62, .ywa-63, .ywa-64 {
+        fill: #faf5ed;
+      }
+
+      .ywa-163 {
+        clip-path: url(#ywa-clippath-1);
+      }
+
+      .ywa-164 {
+        filter: url(#ywa-drop-shadow-1);
+      }
+
+      .ywa-165 {
+        filter: url(#ywa-drop-shadow-25);
+      }
+
+      .ywa-166 {
+        filter: url(#ywa-drop-shadow-31);
+      }
+
+      .ywa-167 {
+        isolation: isolate;
+      }
+
+      .ywa-168 {
+        fill: #ece5d9;
+      }
+
+      .ywa-169 {
+        clip-path: url(#ywa-clippath-5);
+      }
+
+      .ywa-170 {
+        clip-path: url(#ywa-clippath-20);
+      }
+
+      .ywa-171 {
+        filter: url(#ywa-drop-shadow-13);
+      }
+
+      .ywa-172 {
+        filter: url(#ywa-drop-shadow-11);
+      }
+
+      .ywa-173 {
+        filter: url(#ywa-drop-shadow-10);
+      }
+
+      .ywa-174 {
+        clip-path: url(#ywa-clippath-8);
+      }
+
+      .ywa-86 {
+        stroke-dasharray: 2;
+      }
+
+      .ywa-33, .ywa-34, .ywa-175 {
+        letter-spacing: -.02em;
+      }
+
+      .ywa-142 {
+        opacity: .66;
+      }
+
+      .ywa-97 {
+        opacity: .59;
+      }
+
+      .ywa-176 {
+        clip-path: url(#ywa-clippath-3);
+      }
+
+      .ywa-177 {
+        clip-path: url(#ywa-clippath-26);
+      }
+
+      .ywa-87 {
+        opacity: .32;
+      }
+
+      .ywa-178 {
+        filter: url(#ywa-drop-shadow-30);
+      }
+
+      .ywa-36 {
+        font-size: 10.71px;
+        letter-spacing: -.01em;
+      }
+
+      .ywa-179 {
+        clip-path: url(#ywa-clippath-12);
+      }
+
+      .ywa-180 {
+        filter: url(#ywa-drop-shadow-24);
+      }
+
+      .ywa-181 {
+        clip-path: url(#ywa-clippath-14);
+      }
+
+      .ywa-182 {
+        filter: url(#ywa-drop-shadow-38);
+      }
+
+      .ywa-183 {
+        fill: #d3c6b6;
+      }
+
+      .ywa-40 {
+        font-size: 13px;
+      }
+
+      .ywa-184 {
+        fill: #fff;
+        font-family: Pretendard-SemiBold-KSCpc-EUC-H, Pretendard;
+        font-size: 18.73px;
+        font-weight: 600;
+      }
+
+      .ywa-185 {
+        clip-path: url(#ywa-clippath-19);
+      }
+
+      .ywa-41 {
+        font-size: 20px;
+        letter-spacing: -.01em;
+      }
+
+      .ywa-186 {
+        filter: url(#ywa-drop-shadow-23);
+      }
+
+      .ywa-187 {
+        filter: url(#ywa-drop-shadow-20);
+      }
+
+      .ywa-88 {
+        stroke-dasharray: 1.99 1.99;
+      }
+
+      .ywa-132 {
+        opacity: .04;
+      }
+
+      .ywa-188 {
+        filter: url(#ywa-drop-shadow-40);
+      }
+
+      .ywa-189 {
+        letter-spacing: -.01em;
+      }
+
+      .ywa-89 {
+        opacity: .49;
+      }
+
+      .ywa-190 {
+        letter-spacing: 0em;
+      }
+
+      .ywa-191 {
+        letter-spacing: -.03em;
+      }
+
+      .ywa-192 {
+        filter: url(#ywa-drop-shadow-12);
+      }
+
+      .ywa-193 {
+        filter: url(#ywa-drop-shadow-3);
+      }
+
+      .ywa-194 {
+        fill: #c1a367;
+      }
+
+      .ywa-195 {
+        filter: url(#ywa-drop-shadow-26);
+      }
+
+      .ywa-196 {
+        letter-spacing: -.04em;
+      }
+
+      .ywa-197 {
+        letter-spacing: -.01em;
+      }
+
+      .ywa-198 {
+        clip-path: url(#ywa-clippath-16);
+      }
+
+      .ywa-199 {
+        clip-path: url(#ywa-clippath-2);
+      }
+
+      .ywa-200 {
+        letter-spacing: .01em;
+      }
+
+      .ywa-53 {
+        font-size: 30px;
+        letter-spacing: -.02em;
+      }
+
+      .ywa-92 {
+        opacity: .74;
+      }
+
+      .ywa-201 {
+        letter-spacing: -.05em;
+      }
+
+      .ywa-202 {
+        filter: url(#ywa-drop-shadow-33);
+      }
+
+      .ywa-136 {
+        font-family: Pretendard-Medium-KSCpc-EUC-H, Pretendard;
+      }
+
+      .ywa-93 {
+        opacity: .35;
+      }
+
+      .ywa-203 {
+        clip-path: url(#ywa-clippath-13);
+      }
+
+      .ywa-204 {
+        filter: url(#ywa-drop-shadow-29);
+      }
+
+      .ywa-60 {
+        letter-spacing: -.02em;
+      }
+
+      .ywa-205 {
+        fill: url(#ywa-linear-gradient);
+      }
+
+      .ywa-206 {
+        clip-path: url(#ywa-clippath-24);
+      }
+
+      .ywa-207 {
+        fill: #fffffe;
+      }
+
+      .ywa-208 {
+        clip-path: url(#ywa-clippath);
+      }
+
+      .ywa-94 {
+        stroke: #fffffe;
+        stroke-width: 2px;
+      }
+
+      .ywa-209 {
+        filter: url(#ywa-drop-shadow-32);
+      }
+
+      .ywa-210 {
+        filter: url(#ywa-drop-shadow-27);
+      }
+
+      .ywa-211 {
+        filter: url(#ywa-drop-shadow-15);
+      }
+
+      .ywa-212 {
+        filter: url(#ywa-drop-shadow-35);
+      }
+
+      .ywa-213 {
+        letter-spacing: -.02em;
+      }
+
+      .ywa-214 {
+        opacity: .7;
+      }
+
+      .ywa-215 {
+        letter-spacing: -.02em;
+      }
+</style>
+<defs><linearGradient id="ywa-linear-gradient" x1="373.98" y1="1015.94" x2="373.98" y2="1722.01" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#faf5ed" /><stop offset=".09" stop-color="#faf5ed" stop-opacity=".97" /><stop offset=".22" stop-color="#faf5ed" stop-opacity=".88" /><stop offset=".39" stop-color="#faf5ed" stop-opacity=".74" /><stop offset=".58" stop-color="#faf5ed" stop-opacity=".54" /><stop offset=".78" stop-color="#faf5ed" stop-opacity=".29" /><stop offset="1" stop-color="#faf5ed" stop-opacity="0" /></linearGradient><filter id="ywa-drop-shadow-1" x="0" y="1711.24" width="707.64" height="471.3" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath"><rect class="ywa-95" x="101.52" y="1807.03" width="544.93" height="296.62" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-2" x="86.35" y="2121.87" width="575.28" height="533.04" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-2" stdDeviation="5" /><feFlood flood-color="#514b3b" flood-opacity=".3" /><feComposite in2="blur-2" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-3" x="769.2" y="552.71" width="533.34" height="357.69" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-3" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-3" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-1"><rect class="ywa-95" x="812.71" y="618.74" width="425.44" height="268.57" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-4" x="655.66" y="964.16" width="499.32" height="334.59" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-4" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-4" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-2"><rect class="ywa-95" x="762.05" y="1034.63" width="286.53" height="223.21" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-5" x="947.71" y="1232.87" width="438.5" height="306.53" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-5" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-5" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-3"><rect class="ywa-95" x="962.92" y="1307.82" width="339.86" height="216.46" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-6" x="1408.99" y="416.19" width="195.6" height="234.24" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-6" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".6" /><feComposite in2="blur-6" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-7" x="1397.95" y="762.4" width="626.91" height="417.14" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-7" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-7" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-4"><rect class="ywa-95" x="1413.08" y="791.33" width="545.74" height="336.78" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-8" x="2051.71" y="442.42" width="576" height="479.09" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-8" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-8" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-5"><rect class="ywa-95" x="2066.94" y="624.72" width="545.74" height="239.12" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-9" x="2051.71" y="1653.39" width="585.73" height="337.92" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-9" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-9" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-6"><rect class="ywa-95" x="2066.94" y="1668.43" width="545.74" height="307.65" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-10" x="2071.54" y="1196.8" width="231.6" height="350.24" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-10" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-10" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-7"><rect class="ywa-95" x="2086.66" y="1211.85" width="201.43" height="251.91" rx="29.51" ry="29.51" /></clipPath><clipPath id="ywa-clippath-8"><rect class="ywa-95" x="2697.19" y="159.09" width="595.28" height="1273.05" /></clipPath><filter id="ywa-drop-shadow-11" x="2704.16" y="421.11" width="578.57" height="387.7" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-11" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-11" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-9"><rect class="ywa-95" x="2723.67" y="491.97" width="543.88" height="283.5" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-12" x="2484.79" y="963.97" width="731.56" height="490.36" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-12" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-12" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-10"><rect class="ywa-95" x="2723.67" y="1104.35" width="265.19" height="231.62" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-13" x="2969.71" y="786.09" width="314.15" height="305.86" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-13" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-13" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-11"><rect class="ywa-95" x="2984.86" y="826.63" width="281.71" height="231.62" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-14" x="3290.82" y="454.43" width="413.19" height="358.57" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-14" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-14" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-12"><rect class="ywa-95" x="3377.89" y="533.3" width="263.96" height="236.1" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-15" x="3221.7" y="877.91" width="540.03" height="324.57" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-15" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-15" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-13"><rect class="ywa-95" x="3377.89" y="902.06" width="263.96" height="236.1" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-16" x="3583.58" y="513.4" width="401.78" height="271.2" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-16" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-16" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-14"><rect class="ywa-95" x="3659.89" y="533.3" width="263.96" height="236.1" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-17" x="3594.01" y="844.69" width="344.11" height="366.88" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-17" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-17" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-15"><rect class="ywa-95" x="3659.04" y="902.06" width="263.96" height="236.1" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-18" x="4667.65" y="498.33" width="586.53" height="393.03" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-18" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-18" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-16"><rect class="ywa-95" x="4688.97" y="553.09" width="543.88" height="283.5" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-19" x="4673.29" y="1156.54" width="624.3" height="418.69" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-19" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-19" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-17"><rect class="ywa-95" x="4688.97" y="1246.76" width="543.88" height="283.5" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-20" x="4673.95" y="1668.4" width="574.08" height="371.81" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-20" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-20" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-18"><rect class="ywa-95" x="4688.97" y="1706.19" width="543.88" height="283.5" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-21" x="4669.49" y="3402.28" width="578.54" height="386.94" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-21" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-21" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-19"><rect class="ywa-95" x="4688.97" y="3454" width="543.88" height="283.5" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-22" x="4684.77" y="979.72" width="552.24" height="53.76" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-22" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-22" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-23" x="4684.77" y="1025.32" width="552.24" height="54" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-23" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-23" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-24" x="4684.77" y="1071.16" width="552.24" height="53.76" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-24" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-24" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-25" x="4684.77" y="1116.76" width="552.24" height="54" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-25" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-25" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-26" x="4684.77" y="1162.6" width="552.24" height="53.76" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-26" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-26" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-27" x="4633.86" y="2499.47" width="369.99" height="379" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-27" stdDeviation="7" /><feFlood flood-color="#6b593a" flood-opacity=".43" /><feComposite in2="blur-27" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-20"><rect class="ywa-140" x="4688.97" y="2521.47" width="259.77" height="335.63" rx="45.61" ry="45.61" /></clipPath><filter id="ywa-drop-shadow-28" x="4917.37" y="2500.31" width="369.99" height="378" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-28" stdDeviation="7" /><feFlood flood-color="#6b593a" flood-opacity=".43" /><feComposite in2="blur-28" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-21"><rect class="ywa-140" x="4972.48" y="2521.47" width="259.77" height="335.63" rx="45.61" ry="45.61" /></clipPath><filter id="ywa-drop-shadow-29" x="4633.86" y="2837.94" width="369.99" height="404.21" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-29" stdDeviation="7" /><feFlood flood-color="#6b593a" flood-opacity=".43" /><feComposite in2="blur-29" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-22"><rect class="ywa-140" x="4688.97" y="2885.47" width="259.77" height="335.63" rx="45.61" ry="45.61" /></clipPath><filter id="ywa-drop-shadow-30" x="4898.08" y="2863.76" width="389.28" height="378.39" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-30" stdDeviation="7" /><feFlood flood-color="#6b593a" flood-opacity=".43" /><feComposite in2="blur-30" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-23"><rect class="ywa-140" x="4972.48" y="2885.47" width="259.77" height="335.63" rx="45.61" ry="45.61" /></clipPath><filter id="ywa-drop-shadow-31" x="5246.35" y="304.76" width="656.88" height="436.57" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-31" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-31" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-24"><rect class="ywa-95" x="5344.25" y="379.38" width="543.88" height="283.5" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-32" x="5329.15" y="948.41" width="574.08" height="374.99" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-32" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-32" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-25"><rect class="ywa-95" x="5344.25" y="972.52" width="543.88" height="335.67" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-33" x="5310.91" y="1314.03" width="361.29" height="293.52" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-33" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-33" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-26"><rect class="ywa-95" x="5344.25" y="1329.09" width="266.54" height="263.22" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-34" x="5524.89" y="1314.03" width="423.98" height="293.52" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-34" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".5" /><feComposite in2="blur-34" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-27"><rect class="ywa-95" x="5620.06" y="1329.09" width="266.54" height="263.22" rx="31.35" ry="31.35" /></clipPath><filter id="ywa-drop-shadow-35" x="5575.89" y="1167.79" width="123.12" height="53.04" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-35" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-35" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-36" x="5728.05" y="1008.05" width="154.32" height="53.04" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-36" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-36" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-37" x="5695.68" y="1213.84" width="123.12" height="53.04" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-37" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-37" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-38" x="5755.65" y="1108.7" width="123.12" height="53.04" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-38" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-38" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-39" x="5352.76" y="1052.13" width="123.12" height="53.04" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-39" stdDeviation="2.83" /><feFlood flood-color="#7f7165" flood-opacity=".5" /><feComposite in2="blur-39" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-40" x="5332.75" y="1613.84" width="569.52" height="231.12" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-40" stdDeviation="5" /><feFlood flood-color="#000" flood-opacity=".6" /><feComposite in2="blur-40" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-41" x="5326.9" y="1618.58" width="322.25" height="221.76" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-41" stdDeviation="3.42" /><feFlood flood-color="#000" flood-opacity=".6" /><feComposite in2="blur-41" operator="in" /><feComposite in="SourceGraphic" /></filter><clipPath id="ywa-clippath-28"><rect class="ywa-95" x="5347.97" y="1629.02" width="195.45" height="200.76" rx="97.72" ry="97.72" /></clipPath><filter id="ywa-drop-shadow-42" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-42" stdDeviation="5" /><feFlood flood-color="#fffbf0" flood-opacity=".3" /><feComposite in2="blur-42" operator="in" /><feComposite in="SourceGraphic" /></filter><filter id="ywa-drop-shadow-43" filterUnits="userSpaceOnUse"><feOffset dx="0" dy="0" /><feGaussianBlur result="blur-43" stdDeviation="5" /><feFlood flood-color="#514b3b" flood-opacity=".3" /><feComposite in2="blur-43" operator="in" /><feComposite in="SourceGraphic" /></filter><image id="ywa-image" width="1013" height="679" xlink:href="images/story/art01.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /><image id="ywa-image-2" width="1339" height="1162" xlink:href="images/story/art02.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /><image id="ywa-image-3" width="1000" height="1002" xlink:href="images/story/art03.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /><image id="ywa-image-4" width="1013" height="679" xlink:href="images/story/art04.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /><image id="ywa-image-5" width="1000" height="1002" xlink:href="images/story/art05.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></defs>
+</svg>
+<!--BOARD1-->
+<svg class="yw-art" viewBox="76.34 157.57 595.28 2528.02"><g class="ywa-167">
+<image width="350" height="458" transform="translate(76.22 892.89) scale(1.7)" xlink:href="images/story/art06.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" />
+<image width="631" height="784" transform="translate(76.34 157.57) scale(.94)" xlink:href="images/story/art07.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" />
+<rect class="ywa-205" x="76.34" y="896.52" width="595.28" height="843.92" />
+<g class="ywa-214"><text class="ywa-98" transform="translate(101.52 952.87)"><tspan class="ywa-99" x="0" y="0">P</tspan><tspan class="ywa-191" x="6.66" y="0">r</tspan><tspan class="ywa-102" x="13.94" y="0">o</tspan><tspan class="ywa-201" x="24.42" y="0">l</tspan><tspan class="ywa-102" x="29.41" y="0">ogue</tspan></text></g>
+<text class="ywa-39" transform="translate(176.8824 1040.4603)"><tspan x="0" y="0">매일 손에 쥐는 물건이라면,</tspan><tspan x="-45.72" y="54">소재부터 신중하게 골라야 합니다</tspan></text>
+<rect class="ywa-108" x="199.61" y="1274.69" width="343.52" height="28.57" />
+<text class="ywa-28" transform="translate(192.0469 1171.2064)"><tspan x="0" y="0">한국의 전통 금속 유기, 50년을 이어 온 명장의 손,</tspan><tspan x="11.16" y="31">그리고 한 점씩 손으로 다듬어 완성한 워리스톤.</tspan><tspan x="37.44" y="62">유월에는 이 세 가지 가치를 담았습니다.</tspan><tspan x="15.61" y="124">이번 펀딩에서 한정 수량으로 처음 선보입니다.</tspan></text>
+<rect class="ywa-108" x="76.22" y="1581.59" width="595.4" height="1104" />
+<text class="ywa-67" transform="translate(101.5161 1646.1695)"><tspan class="ywa-154" x="0" y="0">A</tspan><tspan class="ywa-99" x="7" y="0">t a g</tspan><tspan class="ywa-190" x="38.23" y="0">l</tspan><tspan class="ywa-99" x="43.82" y="0">ance</tspan></text>
+<g class="ywa-164"><g class="ywa-208"><image width="1024" height="682" transform="translate(0 1711.2427) scale(.6911)" xlink:href="images/story/art08.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-39" transform="translate(101.5158 1731.0404)"><tspan x="0" y="0">유월 한눈에 보기</tspan></text>
+<text class="ywa-17" transform="translate(101.5161 1778.2095)"><tspan x="0" y="0">전통 유기 소재와 명장의 기술로 완성한 프리미엄 워리스톤 키링입니다.</tspan></text>
+<g class="ywa-125"><rect class="ywa-162" x="101.43" y="2137.03" width="544.99" height="502.86" rx="22.11" ry="22.11" /></g>
+<text class="ywa-18" transform="translate(199.2643 2184.3668)"><tspan x="0" y="0">통유기</tspan></text>
+<text class="ywa-1" transform="translate(200.4061 2219.5811)"><tspan x="0" y="0">구리와 주석을 합금한 유기. </tspan><tspan x="0" y="24">도금이 아니라 소재 자체에서 나오는 묵직한 감촉입니다.</tspan></text>
+<g><circle class="ywa-194" cx="159.53" cy="2177.03" r="15.36" /><text class="ywa-184" transform="translate(155.234 2183.0621)"><tspan x="0" y="0">1</tspan></text></g>
+<text class="ywa-23" transform="translate(199.2643 2305.539)"><tspan x="0" y="0">50년 명장</tspan></text>
+<text class="ywa-8" transform="translate(200.4061 2340.7533)"><tspan class="ywa-102"><tspan x="0" y="0">안성맞춤명장 1호 이종오 명장이 약 50년 동안 </tspan></tspan><tspan class="ywa-73"><tspan x="0" y="24">이어 온 유기 제작의 경험을 담았습니다.</tspan></tspan></text>
+<g><circle class="ywa-194" cx="159.53" cy="2298.2" r="15.36" /><text class="ywa-184" transform="translate(153.8893 2304.2342)"><tspan x="0" y="0">2</tspan></text></g>
+<text class="ywa-18" transform="translate(199.2643 2426.7111)"><tspan x="0" y="0">수작업</tspan></text>
+<text class="ywa-1" transform="translate(200.4061 2461.9255)"><tspan x="0" y="0">쇳물을 붓는 일부터 표면 마감까지, </tspan><tspan x="0" y="24">명장의 공방에서 한 점씩 손으로 완성합니다.</tspan></text>
+<g><circle class="ywa-194" cx="159.53" cy="2419.37" r="15.36" /><text class="ywa-184" transform="translate(153.6149 2425.4064)"><tspan x="0" y="0">3</tspan></text></g>
+<text class="ywa-23" transform="translate(199.2643 2547.8833)"><tspan x="0" y="0">안전 검증</tspan></text>
+<text class="ywa-8" transform="translate(200.4061 2583.0976)"><tspan class="ywa-73"><tspan x="0" y="0">유해 금속 용출·피부 접촉 관련 </tspan></tspan><tspan class="ywa-102"><tspan x="0" y="24">시험성적서 내용을 본문에 공개합니다.</tspan></tspan></text>
+<g><circle class="ywa-194" cx="159.53" cy="2540.55" r="15.36" /><text class="ywa-184" transform="translate(153.487 2546.5786)"><tspan x="0" y="0">4</tspan></text></g>
+<text class="ywa-19" transform="translate(182.92 320.79)"><tspan x="0" y="0">손안에 달을 쥐다</tspan></text>
+<text class="ywa-96" transform="translate(452.52 196.19)"><tspan class="ywa-55" x="0" y="0">안성맞춤명장 1호 이종오 × </tspan><tspan class="ywa-103" x="134.52" y="0">BON YUGI</tspan></text>
+<text class="ywa-68" transform="translate(225 374.54)"><tspan class="ywa-7" x="0" y="0">50년 명장의 유기 워리스톤, 유월 </tspan><tspan class="ywa-137" x="259.49" y="0">鍮月</tspan></text>
+<g><rect class="ywa-92" x="208.86" y="839.84" width="82.18" height="23.05" rx="11.52" ry="11.52" /><text class="ywa-36" transform="translate(219.75 855.17)"><tspan x="0" y="0">명장의 수작업</tspan></text></g>
+<g><rect class="ywa-92" x="318.09" y="839.84" width="86.6" height="23.05" rx="11.52" ry="11.52" /><text class="ywa-36" transform="translate(327.97 855.17)"><tspan x="0" y="0" xml:space="preserve">소재 안전  검증</tspan></text></g>
+<g><rect class="ywa-92" x="434.9" y="839.84" width="122.63" height="23.05" rx="11.52" ry="11.52" /><text class="ywa-36" transform="translate(446.59 855.17)"><tspan x="0" y="0">프리미엄 워리스톤 키링</tspan></text></g>
+</g></svg>
+<!--/BOARD1-->
+<!--BOARD2-->
+<svg class="yw-art" viewBox="731.62 157.57 595.28 1675.25"><g class="ywa-167">
+<rect class="ywa-183" x="731.62" y="157.57" width="595.28" height="1675.25" />
+<text class="ywa-98" transform="translate(757.85 197.27)"><tspan class="ywa-102" x="0" y="0">Why Yu</tspan><tspan class="ywa-213" x="48.97" y="0">w</tspan><tspan class="ywa-102" x="61.31" y="0">ol</tspan></text>
+<text class="ywa-6" transform="translate(943.31 278.21)"><tspan x="0" y="0">긴장한 손이</tspan><tspan x="-57.51" y="54">잠시 쉬어 가는 자리</tspan></text>
+<rect class="ywa-107" x="815.28" y="953.13" width="427.95" height="28.57" />
+<rect class="ywa-107" x="766.14" y="1711.87" width="248.58" height="28.57" />
+<rect class="ywa-107" x="881.3" y="462.53" width="295.91" height="28.57" />
+<text class="ywa-31" transform="translate(910.91 943.4)"><tspan x="0" y="0">그래서 손에 쥐고 천천히 만지며, </tspan><tspan x="-89.73" y="31">잠깐 손끝의 감각에만 머물 수 있는 물건을 떠올렸습니다.</tspan></text>
+<g class="ywa-193"><g class="ywa-163"><image width="1169" height="784" transform="translate(769.2 552.71) scale(.46)" xlink:href="images/story/art09.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-156"><g class="ywa-199"><image width="973" height="652" transform="translate(655.66 964.16) scale(.51)" xlink:href="images/story/art10.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-144"><g class="ywa-176"><image width="973" height="652" transform="translate(953.4318 1232.8671) scale(.4448)" xlink:href="images/story/art11.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-31" transform="translate(876.98 391.45)"><tspan x="0" y="0">발표 순서를 기다리며 볼펜을 딸깍이거나, </tspan><tspan x="-95.26" y="31">퇴근길 지하철에서 괜히 주머니 속을 만지작거린 적이 있으실 거예요. </tspan><tspan x="11.43" y="93">마음이 긴장하면 손이 먼저 움직입니다.</tspan><tspan x="5.22" y="155">그럴 때 우리는 대개 휴대폰을 꺼냅니다. </tspan><tspan x="-10.8" y="186">하지만 화면을 넘긴다고 마음이 쉬지는 않죠. </tspan></text>
+<text class="ywa-49" transform="translate(1077.081 1136.2568)"><tspan class="ywa-99"><tspan x="0" y="0">매일 닿는 물건일수록, </tspan></tspan><tspan class="ywa-102"><tspan x="0" y="37">소재를 봐야 합니다</tspan></tspan></text>
+<text class="ywa-41" transform="translate(770.1568 1701.4411)"><tspan x="0" y="0">매일 쥐는 물건이라면 촉감만큼이나, </tspan><tspan x="0" y="33">무엇으로 어떻게 만들었는지가 중요하다고 생각했습니다.</tspan></text>
+<text class="ywa-48" transform="translate(769.7666 1401.4671)"><tspan class="ywa-102"><tspan x="0" y="0">워리스톤은 하루에도 </tspan></tspan><tspan class="ywa-73"><tspan x="0" y="30">여러 번 손에 닿습니다. </tspan></tspan></text>
+<text class="ywa-31" transform="translate(771.7162 1605.7264)"><tspan x="0" y="0">그런데 늘 들고 다니기 좋으면서 </tspan><tspan x="0" y="30">소재까지 믿을 수 있는 제품은 생각보다 찾기 어렵습니다.</tspan></text>
+</g></svg>
+<!--/BOARD2-->
+<!--BOARD3-->
+<svg class="yw-art" viewBox="1386.89 157.57 595.28 1419.69"><g class="ywa-167">
+<rect class="ywa-121" x="1386.89" y="157.57" width="595.28" height="1419.69" />
+<text class="ywa-77" transform="translate(1413.1265 197.2733)"><tspan x="0" y="0">The Moon</tspan></text>
+<text class="ywa-64" transform="translate(1428.3471 278.2111)"><tspan x="0" y="0">차오르고, 가득해지고,</tspan><tspan x="0" y="54">다시 비워지는 달</tspan></text>
+<g class="ywa-131"><rect class="ywa-80" x="1424.64" y="431.71" width="164.35" height="203.2" rx="36.77" ry="36.77" /></g>
+<path class="ywa-133" d="M1506.82,461.18c-1.39,0-2.75.13-4.07.36,11.01,1.92,19.38,11.52,19.38,23.07s-8.37,21.16-19.38,23.08c1.32.23,2.68.36,4.07.36,12.94,0,23.43-10.49,23.43-23.44S1519.76,461.18,1506.82,461.18Z" />
+<text class="ywa-10" transform="translate(1482.0672 552.4112)"><tspan x="0" y="0">초승달</tspan></text>
+<text class="ywa-38" transform="translate(1445.9177 610.4347)"><tspan x="0" y="0">새로운 시작과 가능성</tspan></text>
+<line class="ywa-93" x1="1452.34" y1="577.54" x2="1561.29" y2="577.54" />
+<rect class="ywa-79" x="1602.36" y="431.71" width="164.35" height="203.2" rx="36.77" ry="36.77" />
+<rect class="ywa-83" x="1413.48" y="1163.79" width="267.68" height="232.59" rx="36.77" ry="36.77" />
+<rect class="ywa-83" x="1690.73" y="1163.79" width="267.68" height="232.59" rx="36.77" ry="36.77" />
+<circle class="ywa-129" cx="1684.53" cy="484.61" r="23.43" />
+<circle class="ywa-88" cx="1506.48" cy="484.61" r="23.43" />
+<g class="ywa-128"><circle class="ywa-88" cx="1862.84" cy="484.61" r="23.43" /></g>
+<text class="ywa-46" transform="translate(1659.7815 552.4112)"><tspan x="0" y="0">보름달</tspan></text>
+<text class="ywa-25" transform="translate(1650.6867 610.4347)"><tspan x="0" y="0">성장과 풍요</tspan></text>
+<line class="ywa-79" x1="1630.06" y1="577.54" x2="1739.01" y2="577.54" />
+<rect class="ywa-79" x="1780.07" y="431.71" width="164.35" height="203.2" rx="36.77" ry="36.77" />
+<path class="ywa-129" d="M1862.25,461.18c1.38,0,2.74.13,4.06.36-11.01,1.92-19.37,11.52-19.37,23.07s8.36,21.16,19.37,23.08c-1.32.23-2.68.36-4.06.36-12.95,0-23.44-10.49-23.44-23.44S1849.3,461.18,1862.25,461.18Z" />
+<text class="ywa-46" transform="translate(1837.4957 552.4112)"><tspan x="0" y="0">그믐달</tspan></text>
+<text class="ywa-25" transform="translate(1807.4014 610.4347)"><tspan x="0" y="0">마무리와 다음 준비</tspan></text>
+<line class="ywa-79" x1="1807.77" y1="577.54" x2="1916.72" y2="577.54" />
+<text class="ywa-51" transform="translate(1499.3134 707.9458)"><tspan x="0" y="0">달을 쥐는 짧은 순간이 스스로를 채워 갈 힘이 되고,</tspan><tspan x="-20.7" y="33">때로는 잠시 비워 내는 여유를 떠올리게 하기를 바랍니다.</tspan></text>
+<text class="ywa-74" transform="translate(1506.4232 1475.8288)"><tspan class="ywa-47" x="0" y="0">두 글자를 붙여 </tspan><tspan class="ywa-14" x="115.65" y="0">유월(</tspan><tspan class="ywa-85" x="154.8" y="0">鍮月</tspan><tspan class="ywa-58" x="190.26" y="0">)</tspan><tspan class="ywa-57" x="197.19" y="0">이라 이름 지었습니다.</tspan></text>
+<text class="ywa-21" transform="translate(1429.9748 385.8877)"><tspan x="0" y="0">유월은 달의 순환이 시작되는 순간, 초승달을 손안에 옮겼습니다.</tspan></text>
+<g class="ywa-160"><g class="ywa-123"><image width="1169" height="784" transform="translate(1402.8698 762.3995) scale(.5321)" xlink:href="images/story/art12.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g><text class="ywa-17" transform="translate(1450.8006 1293.6279)"><tspan x="0" y="0">유 · 놋쇠</tspan></text><text class="ywa-38" transform="translate(1448.6676 1332.8069)"><tspan x="0" y="0">유기를 뜻합니다. 오랜 시간과 장인의 </tspan><tspan x="0" y="21">손을 거쳐야 비로소 하나의 물건이 되</tspan><tspan x="0" y="42">는 전통 금속입니다.</tspan></text><text class="ywa-82" transform="translate(1450.8005 1254.2457)"><tspan x="0" y="0">鍮</tspan></text></g>
+<g><text class="ywa-17" transform="translate(1708.7054 1293.6279)"><tspan x="0" y="0">월 · 달</tspan></text><text class="ywa-38" transform="translate(1706.5723 1332.8069)"><tspan x="0" y="0">차오르고 비워지기를 되풀이하는 달의 </tspan><tspan x="0" y="21">순환을 뜻합니다.</tspan></text><text class="ywa-82" transform="translate(1708.7053 1254.2457)"><tspan x="0" y="0">月</tspan></text></g>
+</g></svg>
+<!--/BOARD3-->
+<!--BOARD4-->
+<div class="yw-art-wrap">
+<svg class="yw-art" viewBox="2042.17 157.57 595.28 2809.37"><g class="ywa-167">
+<rect class="ywa-135" x="2042.17" y="157.57" width="595.28" height="2809.37" />
+<rect class="ywa-132" x="2081.34" y="1061.2" width="516.94" height="110.95" />
+<rect class="ywa-132" x="2323.11" y="1222.14" width="271.05" height="231.33" />
+<g class="ywa-155"><g class="ywa-169"><use transform="translate(2063.7755 442.4231) scale(.4123)" xlink:href="#ywa-image-2" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-124"><g class="ywa-113"><image width="1699" height="940" transform="translate(2059.6864 1660.6495) scale(.3401)" xlink:href="images/story/art13.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-173"><g class="ywa-114"><image width="324" height="538" transform="translate(2084.9741 1201.6144) scale(.6332)" xlink:href="images/story/art14.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<line class="ywa-78" x1="2304.73" y1="533.32" x2="2374.89" y2="533.32" />
+<line class="ywa-78" x1="2213.01" y1="1061.2" x2="2213.01" y2="1172.15" />
+<line class="ywa-78" x1="2335.87" y1="1061.2" x2="2335.87" y2="1172.15" />
+<line class="ywa-78" x1="2474.07" y1="1061.2" x2="2474.07" y2="1172.15" />
+<line class="ywa-78" x1="2081.34" y1="1061.2" x2="2598.27" y2="1061.2" />
+<line class="ywa-78" x1="2081.34" y1="1172.15" x2="2598.27" y2="1172.15" />
+<line class="ywa-89" x1="2081.34" y1="2088.84" x2="2598.27" y2="2088.84" />
+<line class="ywa-78" x1="2092.52" y1="1538.08" x2="2491.36" y2="1538.08" />
+<line class="ywa-87" x1="2323.11" y1="1222.14" x2="2594.16" y2="1222.14" />
+<text class="ywa-106" transform="translate(2068.402 197.2733)"><tspan class="ywa-99" x="0" y="0">Ma</tspan><tspan class="ywa-196" x="18.56" y="0">s</tspan><tspan class="ywa-102" x="24.66" y="0">ter · 50 years</tspan></text>
+<text class="ywa-64" transform="translate(2083.6227 278.2111)"><tspan x="0" y="0">기계가 대신할 수 없는 것,</tspan><tspan x="0" y="54">50년 동안 쌓아 온 명장의 손끝</tspan></text>
+<text class="ywa-22" transform="translate(2264.6981 577.5423)"><tspan x="0" y="0">이종오 · 안성맞춤명장 1호</tspan></text>
+<text class="ywa-56" transform="translate(2164.7589 917.6134)"><tspan class="ywa-73"><tspan x="0" y="0">쇳물의 상태를 살피고, 형태와 두께를 가늠하고, </tspan></tspan><tspan class="ywa-102"><tspan x="55.17" y="24">마지막 표면까지 다듬어 온 시간. </tspan></tspan><tspan class="ywa-102"><tspan x="34.29" y="72">50년 동안 직접 만들고 익혀 온 경험은 </tspan></tspan><tspan class="ywa-73"><tspan x="33.57" y="96">명장의 손끝에 고스란히 쌓여 있습니다.</tspan></tspan></text>
+<text class="ywa-61" transform="translate(2083.6227 2061.1105)"><tspan x="0" y="0">명장에게 물었습니다</tspan></text>
+<text class="ywa-59" transform="translate(2085.6514 2126.0506)"><tspan x="0" y="0">Q. 유기 일은 언제, 어떻게 시작하셨나요?</tspan></text>
+<text class="ywa-9" transform="translate(2085.6514 2155.5988)"><tspan x="0" y="0">명장님 답변이 들어갈 자리입니다.</tspan></text>
+<line class="ywa-89" x1="2081.34" y1="2180.67" x2="2598.27" y2="2180.67" />
+<text class="ywa-59" transform="translate(2085.6514 2217.8757)"><tspan x="0" y="0">Q. 명장님께 좋은 유기란 어떤 유기인가요?</tspan></text>
+<text class="ywa-9" transform="translate(2085.6514 2247.4239)"><tspan x="0" y="0">명장님 답변이 들어갈 자리입니다.</tspan></text>
+<line class="ywa-89" x1="2081.34" y1="2272.49" x2="2598.27" y2="2272.49" />
+<text class="ywa-56" transform="translate(2085.6514 2309.7008)"><tspan class="ywa-102"><tspan x="0" y="0">Q. 그릇이 아닌, 손에 쥐는 물건은 처음이셨을 텐데요. </tspan></tspan><tspan class="ywa-73"><tspan x="0" y="26" xml:space="preserve">    제안을 받고 어떠셨나요?</tspan></tspan></text>
+<text class="ywa-9" transform="translate(2085.6514 2364.1817)"><tspan x="0" y="0">명장님 답변이 들어갈 자리입니다.</tspan></text>
+<line class="ywa-89" x1="2081.34" y1="2389.25" x2="2598.27" y2="2389.25" />
+<text class="ywa-59" transform="translate(2085.6514 2426.4586)"><tspan x="0" y="0">Q. 유월을 만들면서 가장 까다로웠던 공정은 무엇인가요?</tspan></text>
+<text class="ywa-50" transform="translate(2115.6745 2645.3906)"><tspan x="0" y="0">명장의 낙관</tspan></text>
+<text class="ywa-9" transform="translate(2085.6514 2456.0068)"><tspan x="0" y="0">명장님 답변이 들어갈 자리입니다.</tspan></text>
+<line class="ywa-89" x1="2081.34" y1="2481.07" x2="2598.27" y2="2481.07" />
+<text class="ywa-59" transform="translate(2085.6514 2518.2836)"><tspan x="0" y="0">Q. 유월을 손에 쥘 분들께 한마디 해 주신다면요.</tspan></text>
+<text class="ywa-9" transform="translate(2085.6514 2547.8319)"><tspan x="0" y="0">명장님 답변이 들어갈 자리입니다.</tspan></text>
+<text class="ywa-38" transform="translate(2115.6742 2677.3648)"><tspan x="0" y="0">모든 넘버링 보증 카드에는 명장의 </tspan><tspan x="0" y="24">낙관을 찍습니다. 명장의 공방에서 </tspan><tspan x="0" y="48">완성되었다는 표시입니다.</tspan></text>
+<line class="ywa-89" x1="2081.34" y1="2572.9" x2="2598.27" y2="2572.9" />
+<text class="ywa-29" transform="translate(2280.3172 439.3635)"><tspan x="0" y="0">“명장님 </tspan><tspan x="-.72" y="54">한 마디”</tspan></text>
+<text class="ywa-53" transform="translate(2118.683 1122.5965)"><tspan x="0" y="0">50년</tspan></text>
+<text class="ywa-15" transform="translate(2341.6944 1250.2689)"><tspan x="0" y="0">이름</tspan></text>
+<text class="ywa-63" transform="translate(2417.9822 1250.2689)"><tspan x="0" y="0">이종오 명장</tspan></text>
+<line class="ywa-87" x1="2323.11" y1="1268.41" x2="2594.16" y2="1268.41" />
+<text class="ywa-15" transform="translate(2341.6944 1296.5357)"><tspan x="0" y="0">칭호</tspan></text>
+<text class="ywa-63" transform="translate(2417.9822 1296.5357)"><tspan x="0" y="0">안성맞춤명장 1호</tspan></text>
+<line class="ywa-87" x1="2323.11" y1="1314.67" x2="2594.16" y2="1314.67" />
+<text class="ywa-15" transform="translate(2341.6944 1342.8024)"><tspan x="0" y="0">공방</tspan></text>
+<text class="ywa-63" transform="translate(2417.9822 1342.8024)"><tspan x="0" y="0">안성맞춤전통유기 (경기도 안성)</tspan></text>
+<line class="ywa-87" x1="2323.11" y1="1360.94" x2="2594.16" y2="1360.94" />
+<text class="ywa-34" transform="translate(2341.6944 1389.0692)"><tspan x="0" y="0">경력</tspan></text>
+<text class="ywa-33" transform="translate(2417.9822 1389.0692)"><tspan x="0" y="0">약 50년 유기 제작</tspan></text>
+<text class="ywa-33" transform="translate(2089.5051 1562.9985)"><tspan x="0" y="0">19○○</tspan></text>
+<text class="ywa-32" transform="translate(2090.3433 1581.5661)"><tspan class="ywa-175"><tspan x="0" y="0">유기 일을 처음 </tspan></tspan><tspan class="ywa-102"><tspan x="0" y="17">배우기 시작</tspan></tspan></text>
+<text class="ywa-33" transform="translate(2217.1115 1562.9985)"><tspan x="0" y="0">19○○</tspan></text>
+<text class="ywa-5" transform="translate(2217.9497 1581.5661)"><tspan x="0" y="0">안성에 공방을 열고 </tspan><tspan x="0" y="17">안성맞춤전통유기를 이어 옴</tspan></text>
+<text class="ywa-63" transform="translate(2388.5506 1562.9985)"><tspan x="0" y="0">20○○</tspan></text>
+<text class="ywa-32" transform="translate(2389.3888 1581.5661)"><tspan class="ywa-102"><tspan x="0" y="0">안성맞춤명장 </tspan></tspan><tspan class="ywa-175"><tspan x="0" y="17">1호로 지정</tspan></tspan></text>
+<text class="ywa-63" transform="translate(2484.4055 1562.9985)"><tspan x="0" y="0">2026</tspan></text>
+<text class="ywa-5" transform="translate(2485.2437 1581.5661)"><tspan x="0" y="0">본유기와 함께 </tspan><tspan x="0" y="17">첫 오브제 '유월'을 만듦</tspan></text>
+<line class="ywa-87" x1="2323.11" y1="1407.21" x2="2594.16" y2="1407.21" />
+<text class="ywa-34" transform="translate(2341.6944 1435.336)"><tspan x="0" y="0">주요 이력</tspan></text>
+<text class="ywa-15" transform="translate(2092.7771 1515.7398)"><tspan x="0" y="0">명장이 걸어온 길</tspan></text>
+<text class="ywa-33" transform="translate(2417.9822 1435.336)"><tspan x="0" y="0">-</tspan></text>
+<line class="ywa-87" x1="2323.11" y1="1453.47" x2="2594.16" y2="1453.47" />
+<text class="ywa-53" transform="translate(2252.7967 1122.5965)"><tspan x="0" y="0">1호</tspan></text>
+<text class="ywa-53" transform="translate(2370.3739 1122.5965)"><tspan x="0" y="0">4단계</tspan></text>
+<text class="ywa-53" transform="translate(2494.1021 1122.5965)"><tspan x="0" y="0">○○분</tspan></text>
+<text class="ywa-43" transform="translate(2106.0771 1144.6479)"><tspan x="0" y="0">유기 제작 경력</tspan></text>
+<text class="ywa-43" transform="translate(2235.5409 1145.3278)"><tspan x="0" y="0">안성맞춤명장</tspan></text>
+<text class="ywa-43" transform="translate(2356.0383 1144.6479)"><tspan x="0" y="0">손을 거치는 공정</tspan></text>
+<text class="ywa-43" transform="translate(2496.4414 1144.6479)"><tspan x="0" y="0">한 점 손 마감</tspan></text>
+<circle class="ywa-81" cx="2096.14" cy="1538.08" r="4" />
+<circle class="ywa-81" cx="2221.53" cy="1538.08" r="4" />
+<circle class="ywa-81" cx="2392.55" cy="1538.08" r="4" />
+<circle class="ywa-133" cx="2491.36" cy="1538.08" r="4" />
+<line class="ywa-86" x1="2491.36" y1="1538.08" x2="2594.16" y2="1538.08" />
+<g class="ywa-151"><circle class="ywa-94" cx="2339.81" cy="1822.25" r="29.96" /><polygon class="ywa-207" points="2358.26 1822.25 2330.58 1806.28 2330.58 1838.23 2358.26 1822.25" /></g>
+<rect class="ywa-84" x="2093.92" y="2591.89" width="238.48" height="179.05" rx="39.62" ry="39.62" />
+<text class="ywa-50" transform="translate(2368.9733 2645.3906)"><tspan x="0" y="0">명장의 검수</tspan></text>
+<text class="ywa-38" transform="translate(2368.973 2677.3648)"><tspan x="0" y="0">완성된 유월은 명장이 직접 쥐어 보</tspan><tspan x="0" y="24">고 곡선과 표면을 확인한 뒤 내보냅</tspan><tspan x="0" y="48">니다.</tspan></text>
+<rect class="ywa-84" x="2347.22" y="2591.89" width="238.48" height="179.05" rx="39.62" ry="39.62" />
+<text class="ywa-16" transform="translate(2251.338 2852.154)"><tspan class="ywa-104"><tspan x="0" y="0">유월에는 이종오 명장이 </tspan></tspan><tspan class="ywa-104" x="-84.24" y="33">오랜 시간 쌓아 온 </tspan><tspan class="ywa-90" x="49.59" y="33">기술과 경험</tspan><tspan class="ywa-101" x="134.55" y="33">이 담겨 있습니다.</tspan></text>
+</g></svg>
+<button type="button" class="yw-video-hit" data-yt="dnawzofUZro" aria-label="명장 작업 영상 재생"></button>
+</div>
+<script>
+/* 영상 그림을 누르면 그 자리에서 유튜브 영상 재생 */
+document.querySelectorAll('.yw-video-hit').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var box = document.createElement('div');
+    box.className = 'yw-video-hit playing';
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + btn.dataset.yt + '?autoplay=1&rel=0&playsinline=1';
+    f.title = '명장 작업 영상';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    box.appendChild(f);
+    btn.replaceWith(box);
+  });
+});
+</script>
+<!--/BOARD4-->
+<!--BOARD5-->
+<svg class="yw-art" viewBox="2697.19 157.57 595.28 1274.57"><g class="ywa-167">
+<g class="ywa-174"><image class="ywa-147" width="794" height="1200" transform="translate(3395.7332 156.4943) scale(-.9388 1.0605)" xlink:href="images/story/art15.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g>
+<g class="ywa-172"><g class="ywa-138"><image width="973" height="652" transform="translate(2704.1649 421.1098) scale(.5946)" xlink:href="images/story/art16.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-192"><g class="ywa-139"><image width="1013" height="679" transform="translate(2484.7927 963.9669) scale(.7222)" xlink:href="images/story/art17.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-171"><g class="ywa-153"><image width="500" height="500" transform="translate(2978.0032 786.086) scale(.6117)" xlink:href="images/story/art18.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-52" transform="translate(2735.669 893.244)"><tspan x="0" y="0">안성맞춤, 유기의 고장</tspan></text>
+<text class="ywa-37" transform="translate(2737.7685 927.4262)"><tspan x="0" y="0">안성 유기는 조선 후기부터 </tspan><tspan x="0" y="29">전국에 이름을 알린 전통 </tspan><tspan x="0" y="58">놋그릇입니다.</tspan></text>
+<text class="ywa-52" transform="translate(3008.2404 1154.0058)"><tspan x="0" y="0">본유기, 유기를 일상으로</tspan></text>
+<text class="ywa-48" transform="translate(3010.3399 1188.1881)"><tspan class="ywa-102"><tspan x="0" y="0">명장의 기술과 소재는 그대로 두고 </tspan></tspan><tspan class="ywa-102"><tspan x="0" y="29">쓰임만 새로 찾았습니다. </tspan></tspan><tspan class="ywa-102"><tspan x="0" y="87">밥상 위에 있던 유기를 손안과 가방 </tspan></tspan><tspan class="ywa-102" x="0" y="116">곁으로. 그 첫 번째가 </tspan><tspan class="ywa-70" x="152.55" y="116">유월</tspan><tspan class="ywa-73" x="184.77" y="116">입니다.</tspan></text>
+<g class="ywa-115"><g><path class="ywa-69" d="M3243.45,417.86c-1.4-.02-2.55-.88-3.92-.73-3.82.42-6.38-1.75-11.19-.24l-5.68.44c-1.39.11-2.65,1.13-4.23.75-1.15-.28-1.89.51-2.73.74-3.85,1.07-7.2,2.84-10.28,5.54,1.1,1.4,2.19-.33,2.91-.33h10.12c.98,0,2.58,1.01,3.56,1.4,4.05,1.62,4.29,5.85,3.94,10.96l-.46,6.73c-.04.64,1.56,1.01,2.1.89,1.91-.46,3.56.43,5.11.71l5.08.91,5.06.86,17.8.27c.46,0,.77,1.1.39,1.64l-4.11,1.12-13.76-.12c-1.77,0-3.47-.98-5.54-.83-1.06.08-2.62-1.62-4-.6-2.87,8.28-11.27,10.69-19.36,13.93l-6.85,2.75-6.83,3.18-7.62,4c-2.04,1.07-3.79,2.26-5.89,3.32l-5.71,2.88c-2.7,1.37-5.13,2.44-8.29,2.34l-4.1.74-8.28-1.03c-4.77-.6-9.38-3.28-12.83-6.58l-6.35-6.07-6.29-5.67c-10.19-9.19-24.52-11.43-27.86-23.79-1.71-6.33-.65-13.2,3-18.46,1.14-1.65,2.24-3.37,3.77-4.53l2.88-2.2,6.74-3.72,5.52-2.13,8.61-2.55c2.85-.85,5.31-2.13,7.88-3.57l5.86-3.29,4.51-2.4c5.75-3.07,11.47-4.68,18.14-4.35l13.9-13.54,6.81-6.26.35-6.96,1.04-3.96c1.32-4.99,7.24-8.3,12.76-9.5l4.38-.95c3.92-.86,9.47-.95,11.01-2.03.61-.43,1.41.23,1.57.74.56,1.75-2.34,2.35-5.77,2.86l-5.55.84-3.77,1c-5.04.5-10.16,2.58-11.89,7.61-.7,2.02-1.51,3.9-.74,6.29l5.09-2.77c2.52-1.37,4.4-1.95,7.19-2.58l4.57-1.02c5.64-1.27,11-1.52,14.99-2.82l6.18-2.03c.78-.25,1.3-.79,2.08-.07s.93,1.49.03,2.17c-1.3.98-2.46,1.15-3.84,1.47l-3.74.85c-2.38.55-4.56,1.32-7.52,1.85l-11.72,2.08-3.3.96-3.12,1.02c-1.01.33-2.42,1.34-3.23,2.11l-8.02,7.56-6.21,5.74c-4.48,4.14-8.4,8.55-12.58,13.03l-2.22,2.38c-1.64,1.77-3.5,3.41-4.07,5.88,6.05,5.79-.04,15.28-6.87,19.32-1.33.79-2.53,1.03-4.34,1.01,1.88,3.2,5.25,3.67,8.46,3.75,3.9.11,7.02-.69,10.41-2.64,1.19-.69,2.82-.89,4.05-1.86,3.96-3.1,7.26-6.66,10.68-10.34,3.65-3.91,7.6-7.03,11.95-10.09,2.34-1.65,4.89-4.13,7.53-5.21l8.1-5.31c3.33.22,6.42-.16,9.67-.76l11.81-.22,3.25-.89c2.54.27,5.23-.49,7.47.33,6.5,2.37,16.63,7.4,11.47,9.26-1.25.46-3.26-2.15-6.65-3.79l-5.48-2.65c-3.07-.86-6.38,0-9.53-.28-.8-.07-2.22.99-1.8,1.72,1.03,1.81,2.18,3.7,3.57,5.15,2.7,2.81,6.07,8.56,6.86,12.38l.12,3.63,8.64-.13,4.71-1.14c1.41-.35,2.71-1.15,4.08,0-1.29,2.31-3.8,3.29-6.39,3.36l-1.9.78L3243.45,417.86ZM3183.17,459.35c-5.21,3.27-16.16,8.05-16.89,3.69,7.74.69,13.77-4.35,20.25-7.74l10.51-5.49,7.68-2.97c1.46-.57,3.18-.37,4.14-1.65-3.74-1.25-7.13-2.83-9.57-5.82-2.56-6.22-.19-13.11,4.89-17.3,1.02-.84,1.5-1.71,2.79-2.31l8.76-4.05c-2.79-2.48-5.76-3.57-8.75-5.05-2.12-1.05-3.96-2.63-6.4-3.08-4.16,2.79-7.36,6.28-10.76,9.77-4.54,4.68-6.11,6.68-12.76,9.73-6.64,3.04-13.88,4.17-19.76-.2-1.48-1.1-2.74-1.94-3.48-3.89-.89-2.36-1.2-4.77.45-6.89l6.61-8.45,5.05-6.44c2.33-2.97,6.43-6.9,4.75-7.87-1.86,1.1-3.84.58-5.74,1.12l-3.5,1-5.42,2.76c-5.74,2.92-11.13,6.33-17.24,8.38l-8.22,2.77c-10.38,3.49-18.26,7.89-20.91,18.98-.55,2.31-.83,5.08-.07,7.4l.99,3.06c1.77,4.04,5.05,6.9,8.74,9.11l11.78,7.06,2.68,1.82,7.23,6.1,3.25,3.13c3.64,4.21,7.64,7.37,12.72,9.84,2.17,1.06,4.66,1.46,7.15,1.94,6.93,1.34,13.63-.76,19.71-4.08l15.7-8.6,6.2-2.9,8.61-3.48c5.89-2.37,14.52-5.56,16.19-10.92-2.06.08-3.58-.77-5.32-.84l-5.78-.22c-3.3-1.55-6.82-1.21-9.63.91C3199.8,449.22,3191.58,454.05,3183.17,459.35ZM3236.64,414.12l5.51.42c1.22.1,3.28,1.19,4.27.34,1.22-1.03-.13-2.81-.36-3.82-.49-2.15-1.57-3.65-2.78-5.52l-1.97-3.07-6.11-9.05-7.56.12c-5.39,1.1-10.48.11-10.64,3.19-.07,1.13.24,2.32,1.36,3.07l1.14,1.99,6.76,6.56,3.11,2.36c1.06.81,2.15,2.15,3.37,2.45L3236.64,414.12ZM3219.94,414.44l7.35-.42c.46-.03.41-1.31.06-1.49l-1.39-.7c-3.8-3.09-7.3-6.42-10.32-10.23l-1.89-3.37-6,3.99-4.2,3.06,5.01,2.91c1.68.97,3.62,1.24,4.88,2.92C3215.84,411.64,3217.82,412.93,3219.94,414.44ZM3169.21,409.54c.73-1.85-.69-3.8-2.18-4.64-1.79.96-2.49,2.74-3.67,4.27l-3.19,4.15c-1.35,1.76-3.14,3.03-4.06,5.23C3154.45,422.53,3164.26,421.98,3169.21,409.54ZM3221.58,443.8c1.62-2.25.96-4.09,1.38-6.14.41-2.02,1.58-3.87.42-5.91-.59-1.03-.71-2.83-1.96-3.49-.77-.41-2.15-1.29-3.05-1.38-3.04-.33-6.02-.34-9.11,0l-3.5,1.24c-2.96,1.06-3.82,3.23-4.01,5.88-.29,3.89,1.83,6.58,5.66,7.51l5.78,1.4C3216,443.09,3218.83,442.96,3221.58,443.8Z" /><path class="ywa-69" d="M3153.85,458.52c1.07,1.1,2.56,1.75,2.23,3.74-1.46-1.13-3.14-1.93-4.3-3.27l-2.78-3.22c-5.65-6.55-12.22-12.08-19.83-16.26l-10.4-5.71c-.32-.18-.59-.38-.71-.53-.26-.28.42-1.12,1.03-.82l6.52,3.22,8.87,5.35c4.56,2.74,8.41,6.14,12.06,9.92L3153.85,458.52Z" /><path class="ywa-69" d="M3190.24,426.61c1.34.75-7.88,5.72-11.71,6.82l-2.78.8-3.68.93-10.46.34c-1.75-1.28-3.68-1.63-5.56-2.36-2.73-1.06-4.89-2.97-7.18-4.67-.67-.5-.86-1.56,0-2.07,2.6,2.89,6.03,4.7,9.43,6.38,4.52,2.23,9.46,2.1,14.35.76l2.82-.78c2.57-.7,5-1.35,7.37-2.69l6.22-3.54C3189.38,426.35,3190.05,426.5,3190.24,426.61Z" /><path class="ywa-69" d="M3184.58,441.09c1.83.66-1.77,2.3-5.21,3.74l-3.95.23c-3.75,1.27-7.26.61-11.06-.01l-3.55-.58c-2.94-1.26-5.87-2.07-8.69-3.97,1.03-.81,2.07-.41,2.97.05,8.11,4.13,21.16,4.8,28.87.68C3184.26,441.07,3184.29,440.98,3184.58,441.09Z" /></g></g>
+<text class="ywa-67" transform="translate(2723.6776 197.2733)"><tspan class="ywa-99" x="0" y="0">Anseong-m</tspan><tspan class="ywa-213" x="74.36" y="0">a</tspan><tspan class="ywa-102" x="81.96" y="0">chum</tspan></text>
+<text class="ywa-6" transform="translate(2738.8983 278.2111)"><tspan x="0" y="0">왜 유기일까요</tspan></text>
+<text class="ywa-54" transform="translate(2739.8446 326.3068)"><tspan class="ywa-65" x="0" y="0">'안성맞춤'</tspan><tspan class="ywa-71" x="71.82" y="0">이라는 말은 정교한 솜씨로 이름난 안성 유기의 전통과 함께 </tspan><tspan class="ywa-71"><tspan x="0" y="29">널리 알려져 있습니다. </tspan></tspan><tspan class="ywa-71"><tspan x="0" y="87">주문한 사람에게 꼭 맞게 만들던 그 마음처럼, 유월도 손에 자연스럽게 </tspan></tspan><tspan class="ywa-71"><tspan x="0" y="116">감기는 형태와 촉감을 오래 고민했습니다.</tspan></tspan></text>
+</g></svg>
+<!--/BOARD5-->
+<!--BOARD6-->
+<svg class="yw-art" viewBox="3352.72 157.57 595.28 1594.57"><g class="ywa-167">
+<rect class="ywa-152" x="3352.72" y="157.57" width="595.28" height="1594.57" />
+<text class="ywa-106" transform="translate(3378.9533 197.2733)"><tspan class="ywa-99" x="0" y="0">Handc</tspan><tspan class="ywa-200" x="45.52" y="0">r</tspan><tspan class="ywa-99" x="53.4" y="0">aft</tspan></text>
+<text class="ywa-13" transform="translate(3527.779 278.2111)"><tspan class="ywa-105"><tspan x="0" y="0">명장의 공방에서,</tspan></tspan><tspan class="ywa-189"><tspan x="-70.11" y="54">한 점씩 손으로 완성합니다</tspan></tspan></text>
+<text class="ywa-24" transform="translate(3491.0138 398.2304)"><tspan x="0" y="0">유월 하나가 나오기까지 네 단계를 거칩니다.</tspan><tspan x="-67.36" y="29">기계로 찍어 내는 대신, 단계마다 사람의 눈과 손이 확인합니다.</tspan></text>
+<rect class="ywa-158" x="3415.83" y="477.23" width="469.05" height="26.29" rx="13.15" ry="13.15" />
+<text class="ywa-136" transform="translate(3533.2899 495.0069)"><tspan x="0" y="0">쇳물 내리기 → 형태 잡기 → 깎고 다듬기 → 결내기 · 각인</tspan></text>
+<rect class="ywa-159" x="3415.83" y="477.59" width="74.72" height="25.58" rx="12.79" ry="12.79" />
+<text class="ywa-141" transform="translate(3429.0973 495.0069)"><tspan x="0" y="0">공정 과정</tspan></text>
+<g class="ywa-126"><g class="ywa-179"><image width="500" height="500" transform="translate(3371.4688 491.969) scale(.5732 .6235)" xlink:href="images/story/art19.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /><use transform="translate(3290.8208 454.4306) scale(.3086)" xlink:href="#ywa-image-2" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-211"><g class="ywa-203"><image width="1564" height="940" transform="translate(3221.6966 877.906) scale(.3453)" xlink:href="images/story/art20.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-119"><g class="ywa-181"><image width="1768" height="1189" transform="translate(3583.5763 513.3955) scale(.2273)" xlink:href="images/story/art21.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-146"><g class="ywa-120"><image width="1111" height="1185" transform="translate(3594.0052 844.6887) scale(.3096)" xlink:href="images/story/art22.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-12" transform="translate(3380.5132 805.7876)"><tspan x="0" y="0">도가니에서 구리와 주석을 녹이고, 쇳물의 </tspan><tspan x="0" y="24">상태를 살펴 알맞은 때에 붓습니다. </tspan><tspan x="0" y="48">이 판단은 오래 쌓인 경험에서 나옵니다.</tspan></text>
+<text class="ywa-12" transform="translate(3667.5042 805.7876)"><tspan x="0" y="0">초승달의 볼륨이 한쪽으로 쏠리지 않게 잡고, </tspan><tspan x="0" y="24">굳는 동안 결함이 생기지 않았는지 </tspan><tspan x="0" y="48">확인합니다.</tspan></text>
+<text class="ywa-12" transform="translate(3380.5132 1179.8828)"><tspan x="0" y="0">표면과 모서리를 손으로 깎습니다. 엄지가 </tspan><tspan x="0" y="24">닿는 안쪽 곡선은 직접 쥐어 보며 촉감을 </tspan><tspan x="0" y="48">맞춥니다.</tspan></text>
+<text class="ywa-12" transform="translate(3667.5042 1179.8828)"><tspan x="0" y="0">표면에 일정한 결을 내 은은한 새틴 광택을 </tspan><tspan x="0" y="24">올리고, 001부터 100까지 고유 번호를 </tspan><tspan x="0" y="48">새깁니다.</tspan></text>
+<rect class="ywa-97" x="3377.89" y="1378.5" width="544.69" height="48" rx="24" ry="24" />
+<rect class="ywa-69" x="3377.89" y="1378.5" width="379.16" height="48" rx="24" ry="24" />
+<line class="ywa-89" x1="3391.89" y1="1281.86" x2="3908.83" y2="1281.86" />
+<line class="ywa-89" x1="3391.89" y1="1549.09" x2="3908.83" y2="1549.09" />
+<text class="ywa-62" transform="translate(3394.174 1343.6288)"><tspan x="0" y="0">소재 이야기</tspan></text>
+<text class="ywa-27" transform="translate(3399.1264 1410.3139)"><tspan x="0" y="0">구리 78%</tspan></text>
+<text class="ywa-27" transform="translate(3804.1647 1410.3139)"><tspan x="0" y="0">주석 22%</tspan></text>
+<text class="ywa-38" transform="translate(3396.2025 1463.3187)"><tspan x="0" y="0">유월은 구리와 주석을 합금한 유기로 만듭니다. </tspan><tspan x="0" y="24">두 금속의 비율은 완성품의 색과 단단함에 영향을 주기 때문에, </tspan><tspan x="0" y="48">실제 배합과 그에 따른 특징은 명장 확인을 거쳐 정확히 안내하겠습니다.</tspan></text>
+<text class="ywa-51" transform="translate(3561.8893 1634.1393)"><tspan x="0" y="0">손으로 쓰는 물건이니까,</tspan><tspan x="-126.72" y="33">눈에 보이는 아름다움만큼 손끝에 닿는 마감이 중요합니다.</tspan></text>
+</g></svg>
+<!--/BOARD6-->
+<!--BOARD7-->
+<svg class="yw-art" viewBox="4008 157.57 595.28 1298.48"><g class="ywa-167">
+<rect class="ywa-168" x="4008" y="157.57" width="595.28" height="1298.48" />
+<text class="ywa-20" transform="translate(4059.5897 398.2304)"><tspan class="ywa-102"><tspan x="0" y="0">매일 손에 쥐고 가방과 주머니에 넣어 다니는 물건입니다. </tspan></tspan><tspan class="ywa-102"><tspan x="0" y="29">디자인만큼이나 피부에 닿는 소재가 어떤지 꼼꼼히 확인해야 한다고 </tspan></tspan><tspan class="ywa-73"><tspan x="0" y="58">생각했습니다.</tspan></tspan></text>
+<text class="ywa-4" transform="translate(4037.0824 1401.2357)"><tspan x="0" y="0">유월은 마음을 가라앉히는 데 곁들이는 오브제이며, 의료기기나 치료 목적의 제품이 아닙니다.</tspan></text>
+<text class="ywa-66" transform="translate(4034.2289 197.2733)"><tspan x="0" y="0">Safety</tspan></text>
+<text class="ywa-26" transform="translate(4058.3429 278.2111)"><tspan x="0" y="0">손에 닿는 물건이라,</tspan><tspan x="0" y="54">소재 시험부터 확인했습니다</tspan></text>
+<image width="688" height="963" transform="translate(4107.4239 806.0698) scale(.5789)" xlink:href="images/story/art23.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" />
+<image width="826" height="406" transform="translate(4035.0565 495.0069) scale(.6574)" xlink:href="images/story/art24.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" />
+</g></svg>
+<!--/BOARD7-->
+<!--BOARD8-->
+<svg class="yw-art" viewBox="4663.27 157.57 595.28 3947.33"><g class="ywa-167">
+<rect class="ywa-162" x="4663.27" y="157.57" width="595.28" height="3947.33" />
+<text class="ywa-66" transform="translate(4689.5045 197.2733)"><tspan x="0" y="0">Object</tspan></text>
+<text class="ywa-26" transform="translate(4794.0504 278.2111)"><tspan x="0" y="0">일상 속 촉각 도구에서,</tspan><tspan x="-41.22" y="54">오래 간직하고 싶은 오브제로</tspan></text>
+<text class="ywa-28" transform="translate(4766.9611 398.2304)"><tspan x="0" y="0">손에 쥐고 엄지로 천천히 쓸어내리며 감각에 집중하는 </tspan><tspan x="52.65" y="29">워리스톤의 쓰임은 그대로 두었습니다. </tspan><tspan x="47.34" y="87">여기에 유기 소재와 명장 공방의 수작업, </tspan><tspan x="43.51" y="116">초승달 형태와 섬세한 마감을 더했습니다.</tspan></text>
+<g class="ywa-117"><g class="ywa-198"><image width="973" height="652" transform="translate(4667.6463 498.3279) scale(.6028)" xlink:href="images/story/art25.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-157"><g class="ywa-116"><image width="1169" height="784" transform="translate(4673.2916 1156.54) scale(.534)" xlink:href="images/story/art26.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-187"><g class="ywa-122"><image width="1013" height="679" transform="translate(4688.9703 1668.3955) scale(.5476)" xlink:href="images/story/art27.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-145"><g class="ywa-185"><image width="1013" height="679" transform="translate(4669.4908 3402.2768) scale(.5699)" xlink:href="images/story/art28.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-4" transform="translate(4895.1032 870.9095)"><tspan x="0" y="0">앞에서는 달, 옆에서는 조약돌</tspan></text>
+<text class="ywa-4" transform="translate(4811.5309 1570.2898)"><tspan x="0" y="0">본체가 꼬이지 않도록 돌아가는 연결부, 한 손으로 여닫는 타원 고리</tspan></text>
+<text class="ywa-4" transform="translate(4726.777 3779.7999)"><tspan x="0" y="0">왼쪽은 처음의 금빛, 오른쪽은 시간이 지난 뒤의 예시 연출 이미지, 변화 속도는 사용 환경에 따라 다릅니다</tspan></text>
+<g class="ywa-112"><rect class="ywa-91" x="4693.86" y="988.75" width="534.11" height="35.66" rx="17.83" ry="17.83" /></g>
+<text class="ywa-2" transform="translate(4889.9484 1012.2394)"><tspan x="0" y="0">손바닥 안쪽에 자연스럽게 안기는 넉넉한 볼록면</tspan></text>
+<rect class="ywa-76" x="4693.86" y="988.75" width="142.82" height="35.66" rx="17.83" ry="17.83" />
+<text class="ywa-44" transform="translate(4709.5119 1011.2395)"><tspan x="0" y="0">바깥 곡선 · 달의 등</tspan></text>
+<g class="ywa-186"><rect class="ywa-91" x="4693.86" y="1034.47" width="534.11" height="35.66" rx="17.83" ry="17.83" /></g>
+<text class="ywa-2" transform="translate(4873.7785 1057.9589)"><tspan x="0" y="0">엄지로 천천히 쓸어내릴 때 손끝에 맞닿는 오목한 곡면</tspan></text>
+<rect class="ywa-76" x="4693.86" y="1034.47" width="142.82" height="35.66" rx="17.83" ry="17.83" />
+<text class="ywa-44" transform="translate(4704.0167 1056.9591)"><tspan x="0" y="0">안쪽 곡선 · 엄지 자리</tspan></text>
+<g class="ywa-180"><rect class="ywa-91" x="4693.86" y="1080.19" width="534.11" height="35.66" rx="17.83" ry="17.83" /></g>
+<text class="ywa-2" transform="translate(4861.0387 1103.6785)"><tspan x="0" y="0">주머니 안감이나 소지품에 걸리지 않도록 둥글게 다듬은 끝</tspan></text>
+<rect class="ywa-76" x="4693.86" y="1080.19" width="142.82" height="35.66" rx="17.83" ry="17.83" />
+<text class="ywa-44" transform="translate(4707.5167 1102.6786)"><tspan x="0" y="0">두 개의 끝 · 달의 뿔</tspan></text>
+<g class="ywa-165"><rect class="ywa-91" x="4693.86" y="1125.91" width="534.11" height="35.66" rx="17.83" ry="17.83" /></g>
+<text class="ywa-2" transform="translate(4874.7936 1149.398)"><tspan x="0" y="0">결을 살린 은은한 광택으로 차분하고 고급스러운 질감</tspan></text>
+<rect class="ywa-76" x="4693.86" y="1125.91" width="142.82" height="35.66" rx="17.83" ry="17.83" />
+<text class="ywa-44" transform="translate(4706.922 1148.3981)"><tspan x="0" y="0">표면 · 새틴 헤어라인</tspan></text>
+<g class="ywa-195"><rect class="ywa-91" x="4693.86" y="1171.63" width="534.11" height="35.66" rx="17.83" ry="17.83" /></g>
+<text class="ywa-2" transform="translate(4850.1535 1195.1176)"><tspan x="0" y="0">본체가 꼬이지 않고 자연스럽게 돌아가는 타원형 회전 카라비너</tspan></text>
+<rect class="ywa-76" x="4693.86" y="1171.63" width="142.82" height="35.66" rx="17.83" ry="17.83" />
+<text class="ywa-44" transform="translate(4707.3068 1194.1177)"><tspan x="0" y="0">고리 · 회전 카라비너</tspan></text>
+<text class="ywa-30" transform="translate(4704.7252 962.3692)"><tspan x="0" y="0">손에 맞춘 설계</tspan></text>
+<text class="ywa-45" transform="translate(4710.6364 1677.9452)"><tspan x="0" y="0">이렇게 쓰세요</tspan></text>
+<text class="ywa-45" transform="translate(4710.6364 2476.8874)"><tspan x="0" y="0">하루 어디서나, 손이 닿는 곳에</tspan></text>
+<text class="ywa-45" transform="translate(4710.6364 3330.9235)"><tspan x="0" y="0">시간이 쌓일수록 깊어지는 색</tspan></text>
+<line class="ywa-89" x1="4702.44" y1="910.92" x2="5219.38" y2="910.92" />
+<line class="ywa-89" x1="4702.44" y1="1609.35" x2="5219.38" y2="1609.35" />
+<line class="ywa-89" x1="4705.06" y1="2022.68" x2="4849.9" y2="2022.68" />
+<line class="ywa-89" x1="5071.92" y1="2022.68" x2="5216.76" y2="2022.68" />
+<line class="ywa-89" x1="4888.49" y1="2022.68" x2="5033.33" y2="2022.68" />
+<text class="ywa-23" transform="translate(4705.0622 2090.9939)"><tspan x="0" y="0">쥡니다</tspan></text>
+<text class="ywa-23" transform="translate(4705.0622 2055.7878)"><tspan x="0" y="0">01</tspan></text>
+<text class="ywa-35" transform="translate(4705.859 2127.6921)"><tspan x="0" y="0">볼록한 면이 손바닥에 </tspan><tspan x="0" y="24">닿도록 가볍게 쥡니다. </tspan><tspan x="0" y="48">처음엔 서늘하다가 곧 </tspan><tspan x="0" y="72">손의 온도가 됩니다.</tspan></text>
+<text class="ywa-35" transform="translate(4705.859 3364.2645)"><tspan x="0" y="0">유기는 손의 온기와 공기, 사용 환경에 따라 표면의 색이 서서히 달라질 수 있습니다. 자주 </tspan><tspan x="0" y="24">손이 닿는 자리에는 자연스러운 윤이 생기기도 합니다. 쓰는 사람의 시간이 더해지며 </tspan><tspan x="0" y="48">생기는, 소재 고유의 흔적입니다.</tspan></text>
+<text class="ywa-18" transform="translate(4891.9191 2090.9939)"><tspan x="0" y="0">쓸어내립니다</tspan></text>
+<text class="ywa-23" transform="translate(4891.9191 2055.7878)"><tspan x="0" y="0">02</tspan></text>
+<text class="ywa-35" transform="translate(4892.7162 2127.6921)"><tspan x="0" y="0">엄지를 안쪽 오목한 </tspan><tspan x="0" y="24">곡선에 올리고, 곡선을 </tspan><tspan x="0" y="48">따라 천천히 움직입니다.</tspan></text>
+<text class="ywa-18" transform="translate(5078.776 2090.9939)"><tspan x="0" y="0">숨을 고릅니다</tspan></text>
+<text class="ywa-23" transform="translate(5078.776 2055.7878)"><tspan x="0" y="0">03</tspan></text>
+<text class="ywa-35" transform="translate(5079.5734 2127.6921)"><tspan x="0" y="0">손끝의 감각에 집중하며 </tspan><tspan x="0" y="24">천천히 숨을 내쉽니다. </tspan><tspan x="0" y="48">일상의 속도를 잠깐 </tspan><tspan x="0" y="72">늦추는 계기가 됩니다.</tspan></text>
+<text class="ywa-11" transform="translate(4718.9252 2285.3961)"><tspan x="0" y="0">걸어 둘 때</tspan></text>
+<text class="ywa-38" transform="translate(4718.9249 2317.3703)"><tspan x="0" y="0">가방이나 열쇠에 달아 늘 곁에 두는 </tspan><tspan x="0" y="24">작은 오브제</tspan></text>
+<rect class="ywa-84" x="4700.95" y="2237.73" width="265.44" height="131.05" rx="28.91" ry="28.91" />
+<text class="ywa-11" transform="translate(4997.89 2285.3961)"><tspan x="0" y="0">쥘 때</tspan></text>
+<text class="ywa-38" transform="translate(4997.8898 2317.3703)"><tspan x="0" y="0">잠시 멈춰 손끝의 감각에만 머무는 </tspan><tspan x="0" y="24">짧은 시간</tspan></text>
+<rect class="ywa-84" x="4979.91" y="2237.73" width="265.44" height="131.05" rx="28.91" ry="28.91" />
+<line class="ywa-89" x1="4705.06" y1="3816.7" x2="4849.9" y2="3816.7" />
+<line class="ywa-89" x1="5071.92" y1="3816.7" x2="5216.76" y2="3816.7" />
+<line class="ywa-89" x1="4888.49" y1="3816.7" x2="5033.33" y2="3816.7" />
+<text class="ywa-23" transform="translate(4705.0622 3885.0098)"><tspan x="0" y="0">평소에는</tspan></text>
+<text class="ywa-23" transform="translate(4705.0622 3849.8038)"><tspan x="0" y="0">01</tspan></text>
+<text class="ywa-35" transform="translate(4705.859 3921.7081)"><tspan x="0" y="0">물기나 땀이 묻었다면 </tspan><tspan x="0" y="24">부드러운 마른 천으로 </tspan><tspan x="0" y="48">닦아 주세요.</tspan></text>
+<text class="ywa-18" transform="translate(4891.9191 3885.0098)"><tspan x="0" y="0">표면 관리</tspan></text>
+<text class="ywa-23" transform="translate(4891.9191 3849.8038)"><tspan x="0" y="0">02</tspan></text>
+<text class="ywa-35" transform="translate(4892.7162 3921.7081)"><tspan x="0" y="0">동봉한 관리 천으로 결을 </tspan><tspan x="0" y="24">따라 부드럽게 닦아 </tspan><tspan x="0" y="48">주세요.</tspan></text>
+<text class="ywa-18" transform="translate(5078.776 3885.0098)"><tspan x="0" y="0">주의해 주세요</tspan></text>
+<text class="ywa-23" transform="translate(5078.776 3849.8038)"><tspan x="0" y="0">03</tspan></text>
+<text class="ywa-35" transform="translate(5079.5734 3921.7081)"><tspan x="0" y="0">젖은 채로 오래 두거나 </tspan><tspan x="0" y="24">락스 같은 강한 세제에 </tspan><tspan x="0" y="48">닿으면 얼룩이나 변색이 </tspan><tspan x="0" y="72">생길 수 있습니다.</tspan></text>
+<g class="ywa-210"><rect class="ywa-140" x="4688.97" y="2521.47" width="259.77" height="335.63" rx="45.61" ry="45.61" /><g class="ywa-170"><use transform="translate(4671.476 2512.4896) scale(.2822 .1851)" xlink:href="#ywa-image-3" xmlns:xlink="http://www.w3.org/1999/xlink" /><use transform="translate(4633.8592 2504.5225) scale(.3652)" xlink:href="#ywa-image" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-11" transform="translate(4712.3163 2784.5936)"><tspan x="0" y="0">오전 9시, 책상 앞</tspan></text>
+<text class="ywa-38" transform="translate(4713.6183 2812.8919)"><tspan x="0" y="0">메일함을 열기 전, 잠시 유월을 쥐고 </tspan><tspan x="0" y="24">하루를 시작합니다.</tspan></text>
+<g class="ywa-134"><rect class="ywa-140" x="4972.48" y="2521.47" width="259.77" height="335.63" rx="45.61" ry="45.61" /><g class="ywa-110"><use transform="translate(4954.9866 2512.4896) scale(.2822 .1851)" xlink:href="#ywa-image-5" xmlns:xlink="http://www.w3.org/1999/xlink" /><use transform="translate(4917.3699 2504.5225) scale(.3652)" xlink:href="#ywa-image-4" xmlns:xlink="http://www.w3.org/1999/xlink" /><image width="1013" height="679" transform="translate(4921.924 2518.2368) scale(.3442)" xlink:href="images/story/art29.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-11" transform="translate(4995.827 2784.5936)"><tspan x="0" y="0">오후 1시, 이동하는 길</tspan></text>
+<text class="ywa-38" transform="translate(4997.129 2812.8919)"><tspan x="0" y="0">미팅 장소로 가는 동안 휴대폰 대신 </tspan><tspan x="0" y="24">주머니 속 유월을 쥐어 봅니다.</tspan></text>
+<g class="ywa-204"><rect class="ywa-140" x="4688.97" y="2885.47" width="259.77" height="335.63" rx="45.61" ry="45.61" /><g class="ywa-127"><use transform="translate(4671.476 2876.4896) scale(.2822 .1851)" xlink:href="#ywa-image-3" xmlns:xlink="http://www.w3.org/1999/xlink" /><use transform="translate(4633.8592 2868.5225) scale(.3652)" xlink:href="#ywa-image" xmlns:xlink="http://www.w3.org/1999/xlink" /><image width="811" height="811" transform="translate(4686.2743 2837.9417) scale(.3431)" xlink:href="images/story/art30.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-11" transform="translate(4712.3163 3148.5937)"><tspan x="0" y="0">오후 6시, 가방 위</tspan></text>
+<text class="ywa-38" transform="translate(4713.6183 3176.8919)"><tspan x="0" y="0">가방에 걸린 유월이 작은 달처럼 일상에 </tspan><tspan x="0" y="24">어우러집니다.</tspan></text>
+<g class="ywa-178"><rect class="ywa-140" x="4972.48" y="2885.47" width="259.77" height="335.63" rx="45.61" ry="45.61" /><g class="ywa-130"><use transform="translate(4954.9866 2876.4896) scale(.2822 .1851)" xlink:href="#ywa-image-5" xmlns:xlink="http://www.w3.org/1999/xlink" /><use transform="translate(4917.3699 2868.5225) scale(.3652)" xlink:href="#ywa-image-4" xmlns:xlink="http://www.w3.org/1999/xlink" /><image width="1013" height="679" transform="translate(4921.924 2882.2368) scale(.3442)" xlink:href="images/story/art31.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /><image width="1013" height="679" transform="translate(4898.0797 2863.7606) scale(.372)" xlink:href="images/story/art32.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-60" transform="translate(4995.827 3148.5937)"><tspan x="0" y="0">밤 10시, 현관</tspan></text>
+<text class="ywa-38" transform="translate(4997.129 3176.8919)"><tspan x="0" y="0">열쇠와 함께 유월을 내려놓으며 하루를 </tspan><tspan x="0" y="24">닫습니다.</tspan></text>
+</g></svg>
+<!--/BOARD8-->
+
+  <!-- 8. 상세 정보와 일상 -->
+  <section class="yw-sec yw-cream">
+    <div class="yw-eyebrow">Details</div>
+    <h3 class="yw-h">제품 정보</h3>
+    <table class="yw-table">
+      <tr><th>소재</th><td>유기(구리·주석 합금) 본체, 카라비너 <span class="yw-tbd">고리 소재 확인</span></td></tr>
+      <tr><th>크기 · 무게</th><td>가로 00 × 세로 00 × 두께 00mm, 약 00g <span class="yw-tbd">시제품 실측</span></td></tr>
+      <tr><th>마감</th><td>새틴 헤어라인, 개별 고유 번호 각인(001~100)</td></tr>
+      <tr><th>제작</th><td>안성맞춤전통유기 (경기도 안성)</td></tr>
+      <tr><th>안전 시험</th><td>유해 금속 용출·피부 접촉 관련 시험 <span class="yw-tbd">성적서 확인 후 기재</span></td></tr>
+    </table>
+    <div class="yw-size">
+      <svg viewBox="0 0 300 250" aria-label="유월 크기 도식">
+        <defs><mask id="ywm3"><rect width="300" height="250" fill="#fff"/><circle cx="92" cy="108" r="78" fill="#000"/></mask>
+        <linearGradient id="ywg" x1="0" x2="1"><stop offset="0" stop-color="#e7cf98"/><stop offset="1" stop-color="#b48a45"/></linearGradient></defs>
+        <rect x="168" y="12" width="26" height="40" rx="13" fill="none" stroke="#b48a45" stroke-width="5" transform="rotate(28 181 32)"/>
+        <circle cx="135" cy="120" r="88" fill="url(#ywg)" mask="url(#ywm3)"/>
+        <g stroke="#8f8172" stroke-width="1.2" fill="none"><path d="M47 228H223M47 222v12M223 222v12"/><path d="M246 32V208M240 32h12M240 208h12"/></g>
+        <text x="135" y="246" text-anchor="middle" font-size="12" fill="#5a4f45">가로 00 mm</text>
+        <text x="270" y="124" text-anchor="middle" font-size="12" fill="#5a4f45" transform="rotate(90 270 124)">세로 00 mm</text>
+      </svg>
+      <ul>
+        <li><b>가로</b>00 mm</li>
+        <li><b>세로</b>00 mm</li>
+        <li><b>두께</b>00 mm</li>
+        <li><b>무게</b>약 00 g</li>
+        <li style="margin-top:6px;font-size:12.5px;color:#8f8172">도식입니다. 시제품 실측 후 수치를 기재합니다.<span class="yw-tbd">실측</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 9. 선물과 패키지 (일러스트) -->
+<!--BOARD9-->
+<svg class="yw-art" viewBox="5318.55 157.57 595.28 1740.86"><g class="ywa-167">
+<rect class="ywa-69" x="5318.55" y="157.57" width="595.28" height="1740.86" />
+<text class="ywa-100" transform="translate(5344.7799 197.2733)"><tspan x="0" y="0">Gift</tspan></text>
+<text class="ywa-64" transform="translate(5524.7453 272.4969)"><tspan x="0" y="0">건네는 순간,</tspan><tspan x="-103.95" y="54">마음까지 함께 전하는 선물</tspan></text>
+<rect class="ywa-76" x="5342.03" y="732.57" width="117.33" height="24.38" />
+<rect class="ywa-76" x="5505.45" y="820.57" width="49.02" height="24.38" />
+<text class="ywa-56" transform="translate(5344.9464 722.8018)"><tspan class="ywa-73"><tspan x="0" y="0">새 출발을 앞둔 친구에게, 시험을 준비하는 동생에게, 늘 바쁜 부모님께. </tspan></tspan><tspan class="ywa-102"><tspan x="0" y="29">'잠깐 쉬어 가요'라는 말을 손에 쥘 수 있는 모양으로 건네 보세요.</tspan></tspan><tspan class="ywa-73"><tspan x="0" y="87">전통 소재와 명장의 수작업, 하나뿐인 번호까지. </tspan></tspan><tspan class="ywa-72" x="0" y="116">유월에는 선물에 붙일 이야기가 이미 담겨 있습니다</tspan><tspan class="ywa-102" x="367.11" y="116">.</tspan></text>
+<g class="ywa-166"><g class="ywa-206"><image width="1169" height="784" transform="translate(5246.3515 304.7606) scale(.5569)" xlink:href="images/story/art33.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-209"><g class="ywa-148"><image width="1013" height="679" transform="translate(5334.2801 948.4053) scale(.5481)" xlink:href="images/story/art34.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-202"><g class="ywa-177"><image width="453" height="338" transform="translate(5310.9052 1325.7923) scale(.7975)" xlink:href="images/story/art35.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<g class="ywa-118"><g class="ywa-149"><image width="1013" height="679" transform="translate(5524.8914 1322.6019) scale(.4185)" xlink:href="images/story/art36.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-42" transform="translate(5360.0006 945.2263)"><tspan x="0" y="0">한정판 패키지 구성</tspan></text>
+<g><g class="ywa-212"><rect class="ywa-75" x="5584.46" y="1176.46" width="105.81" height="35.66" rx="17.83" ry="17.83" /></g><text class="ywa-44" transform="translate(5607.7477 1198.9473)"><tspan x="0" y="0">유월 본품</tspan></text></g>
+<g><g class="ywa-109"><rect class="ywa-75" x="5736.77" y="1016.77" width="136.86" height="35.66" rx="17.83" ry="17.83" /></g><text class="ywa-44" transform="translate(5757.8849 1039.2648)"><tspan x="0" y="0">넘버링 보증 카드</tspan></text></g>
+<g><g class="ywa-150"><rect class="ywa-75" x="5704.33" y="1222.49" width="105.81" height="35.66" rx="17.83" ry="17.83" /></g><text class="ywa-44" transform="translate(5725.3629 1244.9791)"><tspan x="0" y="0">린넨 파우치</tspan></text></g>
+<g><g class="ywa-182"><rect class="ywa-75" x="5764.26" y="1117.34" width="105.81" height="35.66" rx="17.83" ry="17.83" /></g><text class="ywa-44" transform="translate(5782.6754 1139.8362)"><tspan x="0" y="0">유기 관리 천</tspan></text></g>
+<g><g class="ywa-111"><rect class="ywa-75" x="5361.33" y="1060.77" width="105.81" height="35.66" rx="17.83" ry="17.83" /></g><text class="ywa-44" transform="translate(5381.5597 1083.2648)"><tspan x="0" y="0">기프트 박스</tspan></text></g>
+<g class="ywa-188"><rect class="ywa-142" x="5347.97" y="1629.02" width="539.2" height="200.76" rx="97.72" ry="97.72" /></g>
+<g class="ywa-143"><g class="ywa-161"><image width="1013" height="679" transform="translate(5326.9009 1621.2844) scale(.3181)" xlink:href="images/story/art37.jpg" xmlns:xlink="http://www.w3.org/1999/xlink" /></g></g>
+<text class="ywa-40" transform="translate(5567.9943 1709.8494)"><tspan class="ywa-215"><tspan x="0" y="0">긴장하거나 했을 때 손으로 만질 무언가를 찾는 분</tspan></tspan><tspan class="ywa-197"><tspan x="0" y="28">명상보다 가볍게, 잠깐 숨을 고를 계기가 필요한 분</tspan></tspan><tspan class="ywa-197"><tspan x="0" y="56">흔하지 않은, 이야기가 담긴 선물을 찾는 분</tspan></tspan><tspan class="ywa-215"><tspan x="0" y="84">우리 전통 공예를 일상 가까이에서 써 보고 싶은 분</tspan></tspan></text>
+<text class="ywa-3" transform="translate(5567.3087 1674.6303)"><tspan x="0" y="0">이런 분께 권합니다</tspan></text>
+</g></svg>
+<!--/BOARD9-->
+
+  <!-- 10. 100개 한정 -->
+  <section class="yw-sec yw-dark">
+    <div class="yw-c">
+      <div class="yw-eyebrow">Limited 100</div>
+      <h3 class="yw-h">단 100개,<br>저마다 다른 번호를 새깁니다</h3>
+      <p class="yw-p">명장의 공방에서 한 점씩 손으로 완성하는 물건이라 만들 수 있는 수량에 한계가 있습니다.<br>유월은 <b>100개만</b> 만들고, No. 001부터 No. 100까지 서로 다른 번호를 새깁니다.<br>펀딩이 끝난 뒤에는 추가로 제작하지 않을 예정입니다.</p>
+    </div>
+    <figure class="yw-fig yw-bleed"><img src="images/lineup.jpg" alt="나란히 놓인 유월들"></figure>
+    <figure class="yw-fig"><img src="images/engrave.jpg" alt="뒷면에 새긴 고유 번호"><figcaption class="yw-cap">뒷면에 새긴 고유 번호 예시 · 연출 이미지</figcaption></figure>
+    <div class="yw-dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="yw-count"><span>남은 번호 <span class="yw-tbd">오픈 후 실시간 반영</span></span><span><b>100</b> / 100</span></div>
+    <div class="yw-legend"><span><i style="background:#c8a45c"></i>남은 번호</span><span><i style="background:#f4ecdc"></i>마감된 번호</span></div>
+    <div class="yw-cards" style="margin-top:30px">
+      <div><b>번호 배정 안내 <span class="yw-tbd">방식 확정 후 안내</span></b><p>후원 순서대로 번호를 배정하는 방안을 검토하고 있습니다. 희망 번호를 고를 수 있는지, 고를 수 있다면 어떻게 신청하는지는 확정되는 대로 알려 드립니다.</p></div>
+      <div><b>앞번호는 슈퍼얼리버드부터</b><p>No. 001부터 030까지는 슈퍼얼리버드로 함께해 주신 30분께 먼저 배정합니다.</p></div>
+    </div>
+  </section>
+
+  <!-- 11. 리워드 -->
+  <section class="yw-sec yw-white">
+    <div class="yw-c">
+      <div class="yw-eyebrow">Reward</div>
+      <h3 class="yw-h">리워드 안내</h3>
+    </div>
+    <div class="yw-rw">
+      <div class="best"><span class="flag">앞번호 001~030</span><em>SUPER EARLY</em><b>슈퍼얼리버드</b><p>한정판 패키지 1세트<br>+ 앞번호 우선 배정</p><strong>00,000원 <span class="yw-tbd">미정</span></strong><small>30개 한정</small></div>
+      <div><em>EARLY BIRD</em><b>얼리버드</b><p>한정판 패키지 1세트</p><strong>00,000원 <span class="yw-tbd">미정</span></strong><small>40개 한정</small></div>
+      <div><em>STANDARD</em><b>일반</b><p>한정판 패키지 1세트</p><strong>00,000원 <span class="yw-tbd">미정</span></strong><small>30개 한정</small></div>
+    </div>
+    <ul class="yw-check" style="margin-top:24px">
+      <li>전체 수량은 100개이며, 준비한 수량이 모두 나가면 펀딩이 마감됩니다.</li>
+      <li>모든 리워드는 기프트 박스에 담아 보내 드려 따로 포장하지 않아도 선물할 수 있습니다.</li>
+      <li>선물용 2개 세트는 후원 수요와 제작 가능 수량을 보고 추가로 검토합니다.</li>
+    </ul>
+  </section>
+
+  <!-- 12. 후원금, 진행자, 일정, 약속 -->
+  <section class="yw-sec yw-cream">
+    <div class="yw-eyebrow">Plan</div>
+    <h3 class="yw-h">후원금은 이렇게 쓰입니다 <span class="yw-tbd">비율 확정 후 기재</span></h3>
+    <p class="yw-p">전통 유기 기술이 다음 세대로 이어지려면, 오늘의 생활 속에서 유기를 새롭게 만나는 경험이 필요합니다. 유월은 명장의 기술을 일상의 물건으로 소개하는 첫 시도입니다. 이번 펀딩이 그 가능성을 확인하고 다음 제품으로 이어지는 출발점이 되기를 바랍니다.</p>
+    <div class="yw-fund">
+      <div><span>유월 100개 제작비 (재료비, 명장 공임)</span><span>00%</span></div>
+      <div><span>패키지 제작비 (박스, 파우치, 카드, 관리 천)</span><span>00%</span></div>
+      <div><span>배송비와 플랫폼·결제 수수료</span><span>00%</span></div>
+      <div><span>본유기 다음 제품 개발</span><span>00%</span></div>
+    </div>
+
+    <h4 class="yw-h3">만드는 사람들</h4>
+    <p class="yw-p">안성맞춤전통유기는 이종오 명장이 약 50년 동안 유기 제작 기술을 이어 온 경기도 안성의 공방입니다. 본유기(BON_YUGI)는 명장의 기술과 전통 유기의 가치를 오늘의 일상으로 넓히기 위해 만든 브랜드입니다. 이번 유월 프로젝트는 한경국립대학교에서 경영·디자인·소프트웨어를 공부하는 학생들이 명장과 함께 준비했습니다.</p>
+    <div class="story-image-frame drop-image-slot yw-team-slot" title="클릭하여 사진을 넣어볼 수 있습니다">
+      <input type="file" accept="image/*" class="slot-file-input" style="display: none;">
+      <div class="media-frame-placeholder">
+        <i class="fa-regular fa-image"></i>
+        <div class="frame-label-title">명장과 본유기 팀 공방 사진</div>
+        <div class="frame-label-sub">실촬영 필수 · 작업대 앞에서 시제품을 함께 보는 장면 권장</div>
+      </div>
+    </div>
+
+    <h4 class="yw-h3">진행 일정 <span class="yw-tbd">날짜 확정 후 기재</span></h4>
+    <ol class="yw-tl">
+      <li><b>펀딩 진행</b>0000.00.00 ~ 00.00</li>
+      <li><b>번호 배정 안내</b>펀딩 종료 후 1주 안에 새소식으로 안내</li>
+      <li><b>제작</b>약 0주, 번호 순서대로 제작하며 진행 과정을 새소식으로 공유</li>
+      <li><b>검수와 포장</b>한 점씩 검수한 뒤 넘버링 카드와 함께 포장</li>
+      <li><b>배송</b>0000년 00월부터 순차 발송 · 배송비 <span class="yw-tbd">무료 여부 확인</span></li>
+    </ol>
+
+    <h4 class="yw-h3">메이커의 약속</h4>
+    <div class="yw-cards" style="margin-top:12px">
+      <div><b>펀딩 기간에는</b><p>공방 촬영기와 명장 인터뷰를 새소식으로 전합니다.</p></div>
+      <div><b>제작이 시작되면</b><p>쇳물을 붓는 날, 번호를 새기는 날을 사진으로 공유합니다.</p></div>
+      <div><b>보내기 전에는</b><p>한 점씩 검수한 기록과 함께 발송 일정을 미리 알립니다.</p></div>
+      <div><b>일정이 바뀌면</b><p>지연이 예상되는 즉시 이유와 바뀐 일정을 먼저 알려 드립니다.</p></div>
+    </div>
+
+    <h4 class="yw-h3">미리 알려 드릴 점</h4>
+    <table class="yw-table">
+      <tr><th>제작 일정</th><td>주물과 손 마감은 공정 상태의 영향을 받아 일정이 밀릴 수 있습니다. 그럴 경우 이유와 바뀐 일정을 바로 공지합니다.</td></tr>
+      <tr><th>결과 색</th><td>한 점씩 손으로 마감해 표면의 결과 색이 조금씩 다를 수 있습니다. 불량이 아닌 수작업의 특성입니다.</td></tr>
+      <tr><th>사진</th><td>본문 일부는 연출 이미지입니다. 공방 촬영 후 실제 사진으로 바꾸고 새소식으로 알립니다.</td></tr>
+    </table>
+  </section>
+
+  <!-- 12-3. FAQ -->
+  <section class="yw-sec yw-white">
+    <div class="yw-c"><div class="yw-eyebrow">FAQ</div><h3 class="yw-h">자주 묻는 질문</h3></div>
+    <div class="yw-faq">
+      <details open><summary>워리스톤은 어떻게 쓰나요?</summary><p>손에 가볍게 쥐고 엄지로 가운데 오목한 면을 천천히 쓸어내리면 됩니다. 긴장되거나 생각이 많을 때 손끝의 감각에 잠깐 집중하는 용도로 쓰실 수 있습니다.</p></details>
+      <details><summary>명장이 직접 만드나요?</summary><p>유월은 안성맞춤명장 1호 이종오 명장의 공방, 안성맞춤전통유기에서 만듭니다. 공정별로 명장이 직접 맡는 부분과 공방 장인이 함께하는 부분, 명장의 최종 검수 방식은 확인한 그대로 이곳에 적겠습니다. <span class="yw-tbd">확인 후 기재</span></p></details>
+      <details><summary>크기와 무게는 어떻게 되나요?</summary><p>손바닥 안에 들어오는 크기입니다. 정확한 가로·세로·두께와 무게는 시제품 실측 후 안내하겠습니다. <span class="yw-tbd">실측 후 기재</span></p></details>
+      <details><summary>쓰다 보면 색이 변하나요?</summary><p>유기는 사용 환경에 따라 표면 색이 서서히 달라질 수 있습니다. 소재의 특성에 따른 변화이며, 동봉한 관리 천으로 부드럽게 닦아 관리하실 수 있습니다.</p></details>
+      <details><summary>소재 안전성은 확인했나요?</summary><p>소재 관련 시험을 진행했으며, 시험 기관과 항목, 결과는 실제 시험성적서에 적힌 범위 안에서 본문 '소재 시험' 부분에 공개합니다. <span class="yw-tbd">성적서 확인 후 최종 기재</span></p></details>
+      <details><summary>금속에 민감한 편인데 써도 괜찮을까요?</summary><p>유월은 구리와 주석을 합금한 유기로 만듭니다. 금속에 대한 민감도는 사람마다 다르니, 금속 알레르기가 있거나 피부가 민감하시다면 후원 전에 시험성적서 내용을 확인하시고 문의해 주세요.</p></details>
+      <details><summary>물에 닿아도 되나요?</summary><p>물에 닿았다면 젖은 채로 오래 두지 말고, 부드러운 마른 천으로 물기를 닦아 보관해 주세요.</p></details>
+      <details><summary>원하는 번호를 고를 수 있나요?</summary><p>번호 배정 방식은 지금 확정하고 있습니다. 후원 순서대로 배정할지, 희망 번호 신청을 받을지 정해지는 대로 안내하겠습니다. <span class="yw-tbd">방식 확정 후 교체</span></p></details>
+      <details><summary>펀딩이 끝난 뒤에도 살 수 있나요?</summary><p>이번 유월은 100개 한정으로 만들며, 펀딩이 끝난 뒤 추가로 생산하지 않을 예정입니다.</p></details>
+      <details><summary>선물 포장이 되나요?</summary><p>모든 리워드는 기프트 박스에 담아 보내 드립니다. 따로 포장하지 않아도 그대로 선물하실 수 있습니다.</p></details>
+      <details><summary>교환이나 환불은 어떻게 하나요?</summary><p>수작업 제품이라 표면의 미세한 결이나 색 차이가 있을 수 있습니다. 파손이나 오배송은 수령 후 7일 안에 문의해 주세요. 교환·환불 기준은 플랫폼 정책과 최종 판매 조건에 따라 안내합니다. <span class="yw-tbd">플랫폼 정책 확인</span></p></details>
+    </div>
+    <p class="yw-fine">본문의 일부 이미지는 제품 이해를 돕기 위한 연출 이미지입니다. 실제 제품은 수작업으로 만들어 표면의 결이나 색감에 미세한 차이가 있을 수 있습니다.</p>
+  </section>
+
+  <!-- 13. 마무리 -->
+  <section class="yw-dark yw-closing">
+    <div class="yw-eyebrow">YUWOL · 鍮月</div>
+    <h3 class="yw-h">달은 차오르고, 가득해진 뒤<br>다시 비워집니다.<br><br>50년 동안 쌓아 온 명장의 기술이<br>당신의 손끝에 머무는 순간,<br>그 이름이 유월입니다.</h3>
+    <p class="yw-p">차오르는 달 하나를 손안에 담아 보세요.<br>100개 가운데 하나, 당신의 번호가 기다립니다.</p>
+    <span class="yw-cta">100개 한정 · 지금 유월 펀딩에 참여하세요</span>
+  </section>
+</div>
+
+        </section>
+
+        <!-- =====================================================================
+             PANEL 2: 커뮤니티 (Community Subtabs: 최근 소식 / Q&A / 프로젝트 후기)
+             ===================================================================== -->
+        <section class="tab-panel" id="tab-community">
+
+          <!-- Subtab Buttons -->
+          <div class="community-subnav">
+            <button type="button" class="subtab-btn active" data-subtab="sub-news">
+              최근 소식
+            </button>
+            <button type="button" class="subtab-btn" data-subtab="sub-qa">
+              Q&A
+            </button>
+            <button type="button" class="subtab-btn" data-subtab="sub-reviews">
+              프로젝트 후기
+            </button>
+          </div>
+
+          <!-- Subpanel 1: 최근 소식 -->
+          <div class="community-subpanel active" id="sub-news">
+            <div class="empty-state-card">
+              <p class="empty-text-msg">등록된 최근소식이 없습니다.</p>
+            </div>
+          </div>
+
+          <!-- Subpanel 2: Q&A -->
+          <div class="community-subpanel" id="sub-qa">
+            <div class="qa-input-card">
+              <textarea placeholder="메이커에게 질문할 내용을 남겨주세요." rows="3"></textarea>
+              <div class="qa-submit-row">
+                <button type="button" class="btn-qa-submit btn-proto-hover">문의 등록</button>
+              </div>
+            </div>
+            <div class="empty-state-card">
+              <p class="empty-text-msg">등록된 문의 내역이 없습니다.</p>
+            </div>
+          </div>
+
+          <!-- Subpanel 3: 프로젝트 후기 -->
+          <div class="community-subpanel" id="sub-reviews">
+            <div class="empty-state-card">
+              <p class="empty-text-msg">등록된 프로젝트 후기가 없습니다.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- =====================================================================
+             PANEL 3: 후원자 (Backer List: 오마이컴퍼니 실제 데이터 레이아웃)
+             ===================================================================== -->
+        <section class="tab-panel" id="tab-supporter">
+          <div class="supporter-list-wrap">
+            <div class="empty-state-card">
+              <p class="empty-text-msg">아직 후원자가 없습니다. 펀딩이 시작되면 이곳에 후원 내역이 표시됩니다.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+
+      <!-- =====================================================================
+           RIGHT COLUMN: STICKY SIDEBAR (창작자 소개 & 리워드 선택 목록)
+           ===================================================================== -->
+      <aside class="right-sidebar">
+
+        <!-- 1. Maker / Creator Card -->
+        <!-- [텍스트 수정]: 창작자 정보 수정 -->
+        <section class="maker-profile-card">
+          <div class="maker-header-row">
+            <div class="maker-avatar-drop drop-image-slot" title="클릭하여 프로필 사진을 넣어볼 수 있습니다">
+              <input type="file" accept="image/*" class="slot-file-input" style="display: none;">
+              <div class="maker-avatar-icon"><i class="fa-solid fa-user"></i></div>
+            </div>
+            <div class="maker-title-col">
+              <div class="maker-name">본유기 BON_YUGI</div>
+              <div class="badge-project-count">진행한 프로젝트 1</div>
+            </div>
+          </div>
+
+          <p class="maker-bio-text">
+            안성맞춤명장 1호 이종오 명장의 유기 기술을 오늘의 일상으로 옮기는 브랜드입니다. 전통 유기의 소재와 손기술은 그대로 두고, 손안과 가방 곁에 두는 새로운 쓰임을 제안합니다. 첫 번째 프로젝트는 유기 워리스톤 키링 '유월(鍮月)'입니다.
+          </p>
+
+          <div class="maker-metrics-grid">
+            <div class="metric-item">
+              <span class="m-label">팔로워</span>
+              <span class="m-val">0</span>
+            </div>
+            <div class="metric-item">
+              <span class="m-label">응원</span>
+              <span class="m-val">0</span>
+            </div>
+            <div class="metric-item">
+              <span class="m-label">후기</span>
+              <span class="m-val">0</span>
+            </div>
+          </div>
+
+          <div class="maker-actions-grid">
+            <button type="button" class="btn-maker-follow btn-proto-hover">
+              + 팔로우
+            </button>
+            <button type="button" class="btn-maker-inquiry btn-proto-hover">
+              문의하기
+            </button>
+          </div>
+
+          <button type="button" class="btn-maker-expand" id="btnMakerExpand">
+            더보기 ⌵
+          </button>
+        </section>
+
+
+        <!-- 2. Reward Selection Cards (오마이컴퍼니 리워드 카드 구조) -->
+        <section class="rewards-container">
+
+          <!-- Reward Card 1 -->
+          <!-- [텍스트 수정]: 1번 리워드 금액, 이름, 옵션 수정 -->
+          <article class="omc-reward-card btn-proto-hover">
+            <div class="reward-card-top">
+              <div class="reward-backers-tag">
+                <span class="smile-icon">☺</span> 0명 후원
+              </div>
+              <div class="reward-stock-badge">
+                30개 남음
+              </div>
+            </div>
+
+            <div class="reward-card-price">
+              00,000원+<span class="yw-tbd">미정</span>
+            </div>
+
+            <div class="reward-card-title">
+              [슈퍼얼리버드] 유월 한정판 패키지 + 앞번호(001~030) 우선 배정
+            </div>
+
+            <dl class="reward-info-dl">
+              <div class="r-row">
+                <dt><span class="omc-check">⌵</span> 배송일</dt>
+                <dd>0000년 00월 순차 발송</dd>
+              </div>
+              <div class="r-row">
+                <dt><span class="omc-check">⌵</span> 구성</dt>
+                <dd>
+                  <ul class="reward-vertical-options">
+                    <li>유월 본품 (고유 번호 각인)</li>
+                    <li>넘버링 보증 카드</li>
+                    <li>린넨 파우치</li>
+                    <li>유기 관리 천</li>
+                    <li>본유기 기프트 박스</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <!-- Reward Card 2 -->
+          <!-- [텍스트 수정]: 2번 리워드 수정 -->
+          <article class="omc-reward-card btn-proto-hover">
+            <div class="reward-card-top">
+              <div class="reward-backers-tag">
+                <span class="smile-icon">☺</span> 0명 후원
+              </div>
+              <div class="reward-stock-badge">
+                40개 남음
+              </div>
+            </div>
+
+            <div class="reward-card-price">
+              00,000원+<span class="yw-tbd">미정</span>
+            </div>
+
+            <div class="reward-card-title">
+              [얼리버드] 유월 한정판 패키지
+            </div>
+
+            <dl class="reward-info-dl">
+              <div class="r-row">
+                <dt><span class="omc-check">⌵</span> 배송일</dt>
+                <dd>0000년 00월 순차 발송</dd>
+              </div>
+              <div class="r-row">
+                <dt><span class="omc-check">⌵</span> 구성</dt>
+                <dd>
+                  <ul class="reward-vertical-options">
+                    <li>유월 본품 (고유 번호 각인)</li>
+                    <li>넘버링 보증 카드</li>
+                    <li>린넨 파우치</li>
+                    <li>유기 관리 천</li>
+                    <li>본유기 기프트 박스</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+          <!-- Reward Card 3 -->
+          <!-- [텍스트 수정]: 3번 리워드 수정 -->
+          <article class="omc-reward-card btn-proto-hover">
+            <div class="reward-card-top">
+              <div class="reward-backers-tag">
+                <span class="smile-icon">☺</span> 0명 후원
+              </div>
+              <div class="reward-stock-badge">
+                30개 남음
+              </div>
+            </div>
+
+            <div class="reward-card-price">
+              00,000원+<span class="yw-tbd">미정</span>
+            </div>
+
+            <div class="reward-card-title">
+              [일반] 유월 한정판 패키지
+            </div>
+
+            <dl class="reward-info-dl">
+              <div class="r-row">
+                <dt><span class="omc-check">⌵</span> 배송일</dt>
+                <dd>0000년 00월 순차 발송</dd>
+              </div>
+              <div class="r-row">
+                <dt><span class="omc-check">⌵</span> 구성</dt>
+                <dd>
+                  <ul class="reward-vertical-options">
+                    <li>유월 본품 (고유 번호 각인)</li>
+                    <li>넘버링 보증 카드</li>
+                    <li>린넨 파우치</li>
+                    <li>유기 관리 천</li>
+                    <li>본유기 기프트 박스</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </article>
+
+        </section>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- =========================================================================
+       7. Global Footer (오마이컴퍼니 하단 푸터)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <!-- Notice Bar -->
+    <div class="footer-notice-strip">
+      <div class="footer-content-inner notice-flex">
+        <div class="notice-col">
+          <span class="footer-notice-title">공지사항</span>
+          <a href="javascript:void(0)" class="footer-notice-text">플랫폼 공지 영역 (시안)</a>
+        </div>
+        <div class="app-buttons-col">
+          <a href="javascript:void(0)" class="btn-app-store">
+            <i class="fa-brands fa-google-play"></i> Google Play
+          </a>
+          <a href="javascript:void(0)" class="btn-app-store">
+            <i class="fa-brands fa-apple"></i> App Store
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Footer Body -->
+    <div class="footer-main-body">
+      <div class="footer-content-inner">
+
+        <div class="footer-nav-bar">
+          <a href="javascript:void(0)">홈으로</a>
+          <a href="javascript:void(0)">회사 소개</a>
+          <a href="javascript:void(0)">이용약관</a>
+          <a href="javascript:void(0)" class="font-bold">개인정보보호정책</a>
+          <a href="javascript:void(0)">이용가이드</a>
+        </div>
+
+        <div class="footer-brand-social-row">
+          <div class="footer-logo">
+            <span class="footer-logo-text">펀딩 플랫폼 <span class="text-omc-green">화면 시안</span></span>
+          </div>
+          <div class="footer-sns-icons">
+            <a href="javascript:void(0)" class="sns-circle" aria-label="이메일"><i class="fa-regular fa-envelope"></i></a>
+            <a href="javascript:void(0)" class="sns-circle" aria-label="카카오톡"><i class="fa-solid fa-comment"></i></a>
+            <a href="javascript:void(0)" class="sns-circle" aria-label="네이버블로그"><i
+                class="fa-brands fa-blogger-b"></i></a>
+            <a href="javascript:void(0)" class="sns-circle" aria-label="인스타그램"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="javascript:void(0)" class="sns-circle" aria-label="페이스북"><i
+                class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-info-details">
+          <p>플랫폼 사업자 정보 영역 (시안)</p>
+        </div>
+
+        <div class="footer-disclaimer-text">
+          <p>이 화면은 본유기 팀의 내부 검토용 미리보기이며 실제 플랫폼 페이지가 아닙니다.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Floating Button -->
+  <button type="button" class="btn-scroll-top" id="btnScrollTop" aria-label="맨 위로 이동">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
